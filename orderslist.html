@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta name="description" content="电子商务平台">
+<title>易微优品</title>
+<link href="../16X16_yiwei_logo.ico" rel="SHORTCUT ICON">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+</script>
+</head>
+<body>
+<!--top_menu-開始-->
+<div class="top_menu">
+  <div class="top_menu_content_main"> <a href="javascript:history.go(-1);" class="return_icon"><img src="images/top_return_icon.png"></a>
+    <div class="title_text pull-left">
+      <div class="title_front pull-left">我</div>
+      <div class="title pull-left">的订单</div>
+    </div>
+    <a class="top_menu_bn pull-right" data-toggle="collapse" data-parent="#accordion" href="#coll_01"><img src="images/top_menu_icon_40X40.png"></a>
+    <div class="clear"><!--清除靠左版面用,請勿拿掉--></div>
+  </div>
+  <!--hide_menu-開始-->
+  <div id="coll_01" class="panel-collapse collapse"> <a href="index.html" class="hid_menu text-center"><img src="images/down_menu_bn01.png">&nbsp;首　　页</a> <a href="main.html" class="hid_menu text-center"><img src="images/down_menu_bn02.png">&nbsp;商品分类</a> <a href="shopping_cart.html" class="hid_menu text-center"><img src="images/down_menu_bn03.png">&nbsp;购&nbsp;&nbsp;物&nbsp;&nbsp;车</a> <a href="login.html" class="hid_menu text-center"><img src="images/down_menu_bn04.png">&nbsp;个人中心</a> <a href="#coll_01" class="hid_menu_up text-center" data-toggle="collapse" data-parent="#accordion"><span class="glyphicon glyphicon-remove-circle"></span></a> </div>
+  <!--hide_menu-end--> 
+</div>
+<!--top_menu-end-->
+<div class="main_content"> 
+  <!--內容_開始-->
+  <!--上方分頁按鈕-->
+  <div class="shopping_cat_menu">
+  <div class="btn-group btn-group-justified">
+  <a href="#" class="btn-xs btn btn-info"><!--btn-info為當前頁面樣式,一般樣式為btn-default-->全部</a>
+  <a href="#" class="btn-xs btn btn-default">
+    待付款<span class="badge">20</span></a><!--點擊撈出待付款訂單,下單成功但未完成付款，或等待代支付完成(之後要加的功能,找人代支付訂單)--> 
+    <a href="#" class="btn-xs btn btn-default"><!--btn-default點擊切換btn-info為當前頁面樣式-->
+    待收货<span class="badge">20</span></a><!--點擊撈出待收貨訂單,下單成功處理訂單或配送中皆為待收貨--> 
+    <a href="#" class="btn-xs btn btn-default">已完成</a><!--點擊撈出所有已完成訂單--> 
+    </div>
+  </div>
+  <!--上方分頁按鈕end-->
+  
+  <div class="shopping_cat_list text-muted">
+    <div class="area_bg"> <span>订单编号：20160730010515180</span><span class="pull-right">状态：<span class="point_green">已接单</span></span>
+      <hr>
+      <a href="ordersproduct.html">
+      <div class="goods_orders">
+        <div class="goods_orders_content">
+          <div class="goods_orders_commodity"><img src="images/20160314_460X460_01.jpg"> </div>
+          <div class="goods_orders_commodity"><img src="images/20160314_460X460_02.jpg"> </div>
+          <div class="goods_orders_commodity"><img src="images/20160314_460X460_01.jpg"> </div>
+          <div class="goods_orders_commodity"><img src="images/20160314_460X460_02.jpg"> </div>
+          <div class="goods_orders_commodity"><img src="images/20160314_460X460_03.jpg"> </div>
+          <div class="goods_orders_commodity"><img src="images/20160314_460X460_03.jpg"> </div>
+          <div class="goods_orders_commodity"><img src="images/20160314_460X460_03.jpg"> </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      </a>
+      <hr>
+      <h5 class="text-right price"><small>共45件商品&nbsp;&nbsp;&nbsp;&nbsp;实付：</small><span class="price"><small class="price">¥</small>400000.00</span><!--內頁會有明細說明,不然又是易幣又是積分的很亂,只需顯示實際付款金額--></h5>
+      <!--訂單進行至哪個階段-->
+      <hr>
+      <div class="pull-left"><span class="text-danger"><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;订单将于23:30失效，请于时效内完成付款</span></div>
+      <div class="pull-right"><a href="productorders.html" class="btn btn-xs btn-danger">待付款</a></div>
+      <div class="clear"></div>
+      <!--訂單進行至哪個階段end--> 
+    </div>
+    <div class="area_bg"> <span>订单编号：20160730010515180</span><span class="pull-right">状态：<span class="point_green">处理订单</span></span>
+      <hr>
+      <!--配送狀態,訂單未配送或配送完成則隱藏此欄位--> 
+      <a href="express_tracking.html">
+      <div class="col-xs-11 padding_0 commodity_name"><span class="text-muted">配送状态：</span>2017-03-17 货品已由快递接手，正发往[鸡巴市]货品已由快递接手货品已由快递接手，正发往[鸡巴市]货品已由快递接手<!--只顯示目前最新一筆進度，需限制字數,我css有限制高度最多兩行,進內頁會有配送詳情--></div>
+      <div class="col-xs-1 padding_0 text-right">
+        <h6><span class="glyphicon glyphicon-chevron-right"></span></h6>
+      </div>
+      <div class="clear"></div>
+      </a>
+      <hr>
+      <!--配送狀態end--> 
+      <a href="ordersproduct.html">
+      <div class="goods_orders">
+        <div class="goods_orders_content">
+          <div class="goods_orders_commodity"><img src="images/20160314_460X460_01.jpg"> </div>
+          <div class="goods_orders_commodity"><img src="images/20160314_460X460_02.jpg"></div>
+          <div class="goods_orders_commodity"><img src="images/20160314_460X460_01.jpg"> </div>
+          <div class="goods_orders_commodity"><img src="images/20160314_460X460_02.jpg"> </div>
+          <div class="goods_orders_commodity" style="border-right-width:0px"><img src="images/20160314_460X460_03.jpg"> </div>
+        </div>
+      </div>
+      </a>
+      <hr>
+      <h5 class="text-right"><small>共45件商品&nbsp;&nbsp;&nbsp;&nbsp;实付：</small><span class="price"><small class="price">¥</small>400000.00</span></h5>
+      <!--訂單進行至哪個階段-->
+      <hr>
+      <div class="pull-left"><span class="text-danger"><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;配送中，请耐心等候</span></div>
+      <div class="pull-right"><a href="#detail_record" class="btn btn-xs btn-danger" data-toggle="modal">确认收货</a></div>
+      <div class="clear"></div>
+      <!--訂單進行至哪個階段end--> 
+    </div>
+    <div class="area_bg"> <span>订单编号：20160730010515180</span><span class="pull-right">状态：<span class="point_red">已签收</span></span>
+      <hr>
+      <!--配送狀態,訂單未配送或配送完成則隱藏此欄位--> 
+      <a href="express_tracking.html">
+      <div class="col-xs-11 padding_0 commodity_name"><span class="text-muted">配送状态：</span>2017-03-17 已签收<!--只顯示目前最新一筆進度，需限制字數,我css有限制高度最多兩行,進內頁會有配送詳情--></div>
+      <div class="col-xs-1 padding_0 text-right">
+        <h6><span class="glyphicon glyphicon-chevron-right"></span></h6>
+      </div>
+      <div class="clear"></div>
+      </a>
+      <hr>
+      <!--配送狀態end--> 
+      <a href="ordersproduct.html">
+      <div class="goods_orders">
+        <div class="goods_orders_content">
+          <div class="goods_orders_commodity"><img src="images/20160314_460X460_02.jpg"> </div>
+          <div class="goods_orders_commodity" style="border-right-width:0px"><img src="images/20160314_460X460_03.jpg"> </div>
+        </div>
+      </div>
+      </a>
+      <hr>
+      <h5 class="text-right price"><small>共45件商品&nbsp;&nbsp;&nbsp;&nbsp;实付：</small><span class="price"><small class="price">¥</small>400000.00</span></h5>
+      <!--訂單進行至哪個階段-->
+      <hr>
+      <div class="pull-left"><span class="text-success"><span class="glyphicon glyphicon-ok"></span>&nbsp;配送完成</span></div>
+      <div class="pull-right"><a href="evaluation.html" class="btn btn-xs btn-info">评价晒单</a><!--完成配送後即出現"待評價",點擊跳轉撈出該筆訂單待評價商品-->&nbsp;<a href="shopping_cart.html" class="btn btn-warning btn-xs">再次购买</a><!--完成評價後即出現"再次購買"，可以直接放入購物車--></div>
+      <div class="clear"></div>
+      <!--訂單進行至哪個階段end--> 
+    </div><div class="stamp"><img src="images/stamp.png"></div><!--完成訂單出現印章-->
+    
+    <div class="area_bg"> <span>订单编号：20160730010515180</span><span class="pull-right">状态：<span class="point_red">已签收</span></span>
+      <hr>
+      <!--配送狀態,訂單未配送或配送完成則隱藏此欄位--> 
+      <!--配送狀態end--> 
+      <a href="ordersproduct.html">
+      <div class="goods_orders">
+        <div class="goods_orders_content">
+          <div class="goods_orders_commodity"><img src="images/20160314_460X460_02.jpg"> </div>
+          <div class="goods_orders_commodity" style="border-right-width:0px"><img src="images/20160314_460X460_03.jpg"> </div>
+        </div>
+      </div>
+      </a>
+      <hr>
+      <h5 class="text-right price"><small>共45件商品&nbsp;&nbsp;&nbsp;&nbsp;实付：</small><span class="price"><small class="price">¥</small>400000.00</span></h5>
+      <!--訂單進行至哪個階段-->
+      <hr>
+      <div class="pull-left"><span class="text-warning"><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;已评价</span></div>
+      <div class="pull-right"><a href="shopping_cart.html" class="btn btn-warning btn-xs">再次购买</a><!--完成評價後即出現"再次購買"，可以直接放入購物車--></div>
+      <div class="clear"></div>
+      <!--訂單進行至哪個階段end--> 
+    </div><div class="stamp"><img src="images/stamp.png"></div><!--完成配送後出現印章-->
+    
+    <div class="area_bg"> <span>订单编号：1234567890</span><span class="pull-right">状态：<span class="point_red">已退单</span></span>
+      <hr>
+      <!--配送狀態,訂單未配送或配送完成則隱藏此欄位--> 
+      <!--配送狀態end--> 
+      <a href="ordersproduct.html">
+      <div class="goods_orders">
+        <div class="goods_orders_content">
+          <div class="goods_orders_commodity" style="border-right-width:0px"><img src="images/20160314_460X460_03.jpg"> </div>
+        </div>
+      </div>
+      </a>
+      <hr>
+      <h5 class="text-right"><small>共45件商品&nbsp;&nbsp;&nbsp;&nbsp;实付：</small><span class="price">¥400000.00</span></h5>
+      <!--訂單進行至哪個階段-->
+      <hr>
+      <div class="pull-left"><span class="text-muted"><span class="glyphicon glyphicon-log-in"></span>&nbsp;已退款</span></div>
+      <div class="pull-right"><a href="shopping_cart.html" class="btn btn-warning btn-xs">再次购买</a><!--退單完成後即出現"再次購買"，可以直接放入購物車--></div>
+      <div class="clear"></div>
+      <!--訂單進行至哪個階段end--> 
+    </div>
+  </div>
+</div>
+
+<!--彈出視窗-->
+<div class="modal fade" id="detail_record" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-title" id="myModalLabel"> </div>
+      </div>
+      <div class="modal-body">
+        <h4 class="price">确认已经签收商品?</h4>
+      </div>
+      <div class="modal-footer">
+        <input name="重設" type="reset" class="btn btn-default" value="取消" data-dismiss="modal">
+        <a href="evaluation.html" class="btn btn-danger" onClick="MM_popupMsg('别忘了给商品评价喔！')">确认</a><!--撈出該筆訂單待評價商品--></div>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+$(".goods_orders_content").css("width",60*7);//控制每筆訂單商品列的寬，7為顯示商品數量因數量的不同寬也不同，60為固定值(一個商品個寬)
+</script>
+<script>
+$(document).ready(function(){
+    //滾動卷軸改變上方CSS
+    $('.shopping_cat_list').scroll(function () {
+        if ($('.shopping_cat_list').scrollTop() > 46) {//捲動高多少做動作
+         $(".top_menu").addClass("top_menu_h");//增加css樣式
+		 $(".main_content").addClass("main_content_h");//增加css樣式
+     } else {
+		 $(".top_menu").removeClass("top_menu_h");//刪除樣式
+		 $(".main_content").removeClass("main_content_h");//刪除樣式
+    }
+    });
+}); 
+</script>
+</html>

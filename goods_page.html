@@ -10,23 +10,28 @@
 <link href="swiper/swiper.3.1.7.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/swipebox.min.css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+</script>
 </head>
 <body>
 <!--top_menu-開始-->
 <div class="top_menu">
-  <div class="top_menu_content"> <a href="javascript:history.go(-1);" class="return_icon"><img src="images/top_return_icon.png"></a> <a class="top_menu_bn pull-right" data-toggle="collapse" data-parent="#accordion" href="#coll_01"><img src="images/top_menu_icon_40X40.png"></a>
+  <div class="top_menu_content_main"> <a href="javascript:history.go(-1);" class="return_icon"><img src="images/top_return_icon.png"></a> <a class="top_menu_bn pull-right" data-toggle="collapse" data-parent="#accordion" href="#coll_01"><img src="images/top_menu_icon_40X40.png"></a>
     <div class="clear"><!--清除靠左版面用,請勿拿掉--></div>
   </div>
-<!--hide_menu-開始-->
-<div id="coll_01" class="panel-collapse collapse"> <a href="index.html" class="hid_menu text-center"><img src="images/down_menu_bn01.png">&nbsp;首　　页</a> <a href="main.html" class="hid_menu text-center"><img src="images/down_menu_bn02.png">&nbsp;商品分类</a> <a href="shopping_cart.html" class="hid_menu text-center"><img src="images/down_menu_bn03.png">&nbsp;购&nbsp;&nbsp;物&nbsp;&nbsp;车</a> <a href="login.html" class="hid_menu text-center"><img src="images/down_menu_bn04.png">&nbsp;个人中心</a> <a href="#coll_01" class="hid_menu_up text-center" data-toggle="collapse" data-parent="#accordion"><span class="glyphicon glyphicon-remove-circle"></span></a> </div>
+  <!--hide_menu-開始-->
+  <div id="coll_01" class="panel-collapse collapse"> <a href="index.html" class="hid_menu text-center"><img src="images/down_menu_bn01.png">&nbsp;首　　页</a> <a href="main.html" class="hid_menu text-center"><img src="images/down_menu_bn02.png">&nbsp;商品分类</a> <a href="shopping_cart.html" class="hid_menu text-center"><img src="images/down_menu_bn03.png">&nbsp;购&nbsp;&nbsp;物&nbsp;&nbsp;车</a> <a href="login.html" class="hid_menu text-center"><img src="images/down_menu_bn04.png">&nbsp;个人中心</a> <a href="#coll_01" class="hid_menu_up text-center" data-toggle="collapse" data-parent="#accordion"><span class="glyphicon glyphicon-remove-circle"></span></a> </div>
+<!--hide_menu-end--> 
 </div>
-<!--hide_menu-end-->
-<!--top_menu-end--> 
+<!--top_menu-end-->
 
 <div class="main_content"> 
   <!--內容_開始-->
-<div class="area_bg">
-  <h5 class="top_title">变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜</h5>
+  <div class="area_bg">
+    <h5 class="top_title">变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜</h5>
     <!--產品輪播圖_開始-->
     <div class="swiper-container big_photo">
       <div class="swiper-wrapper">
@@ -36,93 +41,142 @@
       </div>
     </div>
     <!--產品輪播圖_end-->
-    <div class="detailed_test">唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静</div>
-    <span class="big_price"><small>现金价：</small>￥6800.00　<small>易币<img src="images/yiwei_money_icon_40X40.png">：</small>40000</span><span class="buy_stock text-muted">成交：100</span>
+    <div class="detailed_test">唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静</div>
+    <span class="big_price"><small>￥</small>6800.00<!--平台優惠價--></span><span class="text-muted"><s>￥10000<!--市場價--></s></span><span class="buy_stock text-muted">成交：100</span>
     <hr>
+    
+    <!--後台商品若有設置商品規格選項即出現此區塊-->
+    <a href="#select_format" data-toggle="collapse" id="select">
+    <h6 class="text-muted">请选择商品规格：<!--如果已經選好規格,文字即替換成選定的規格,例如：已選 鮮紅色 XL--><span class="sp_icon glyphicon glyphicon-chevron-right pull-right"></span></h6>
+    <div class="clear"></div>
+    </a>
+    <div class="select_style collapse" id="select_format"> 
+        <!--依照商品不同需求出現選項,後台上架商品可以制定-->
+        <div class="select_title col-xs-2 col-sm-1 padding_0"><span class="label label-default">颜色</span></div>
+        <ul class="col-xs-10 col-sm-11">
+          <li class="style_options">鲜红鲜红色</li>
+          <li class="style_options">宝蓝色</li>
+          <li class="style_options">亮黄色</li>
+          <li class="style_options">大便色</li>
+          <li class="style_options">大便大便大便大便色</li>
+          <li class="style_options">大便色</li>
+        </ul>
+        <div class="clear"><!--清除靠左版面用,請勿拿掉--></div>
+        <div class="select_title col-xs-2 col-sm-1 padding_0"><span class="label label-default">尺寸</span></div>
+        <ul class="col-xs-10 col-sm-11">
+          <li class="style_options">XS</li>
+          <li class="style_options">S</li>
+          <li class="style_options">M</li>
+          <li class="style_options">L</li>
+          <li class="style_options">XL</li>
+          <li class="style_options">XXL</li>
+        </ul>
+        <div class="clear"><!--清除靠左版面用,請勿拿掉--></div>
+      </div>
+      <hr>
+      <!--選擇規格end-->
+      
     <div class="select_style text-muted">标签：中国中航工业出品 净化空气 时尚 </div>
     <hr>
-    <button class="btn btn-block btn-info" data-toggle="modal" data-target="#detail_record">查看详情&nbsp;》》
-  </button>
+    <button class="btn btn-block btn-info" data-toggle="modal" data-target="#detail_record">查看商品详情&nbsp;》》 </button>
   </div>
-  <div class="area_bg"><div class="title_front pull-left">评</div><div class="title pull-left">价：<small class="text-danger">好评&nbsp;90%</small></div><div class="pull-right text-muted title_text">共&nbsp;1000&nbsp;条评价</div><div class="clear"></div>
+  <div class="area_bg">
+    <div class="title_front pull-left">评</div>
+    <div class="title pull-left">价：<small class="text-danger">好评&nbsp;90%</small></div>
+    <a href="all_score.html" class="pull-right text-muted title_text">共&nbsp;1000&nbsp;条评价
+    <div class="glyphicon glyphicon-chevron-right"></div>
+    </a>
+    <div class="clear"></div>
     <hr>
     <div class="score">je***in&nbsp;<span class="score_start"><span class="action">★★★★</span>★</span>
-      <div class="score_dat pull-right"><small>2016/11/19</small></div>
+      <div class="score_dat pull-right text-muted"><small>2016/11/19</small></div>
       <div class="clear"></div>
-      <div class="score_content"><a href="20161119_comment.html">真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办</a></div>
-      <div class="score_img"><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2 pull-left"><img src="images/20160107_720X300_coffee.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3  col-sm-2 pull-left"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2 pull-left"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2 pull-left"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2 pull-left"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a></div>
-      <!--上傳圖片需有限制張數-->
-<div class="clear"></div>
-</div>
+      <div class="score_content">真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办</div>
+      <div class="score_img">
+      <a href="images/ironman.jpg" class="swipebox col-xs-3 col-sm-2"><img src="images/ironman.jpg" class="img-thumbnail"></a>
+      <a href="images/ironman.jpg" class="swipebox col-xs-3 col-sm-2"><img src="images/ironman.jpg" class="img-thumbnail"></a>
+      <a href="images/ironman.jpg" class="swipebox col-xs-3 col-sm-2"><img src="images/ironman.jpg" class="img-thumbnail"></a>
+      <a href="images/ironman.jpg" class="swipebox col-xs-3 col-sm-2"><img src="images/ironman.jpg" class="img-thumbnail"></a>
+        <!--限制顯示張數-->
+        <div class="clear"></div>
+      </div>
+      
+    </div>
+    <a href="comment.html" class="btn btn-default btn-xs btn-info pull-right"><span class="glyphicon glyphicon-comment"></span>&nbsp;5&nbsp;回复</a>
+    <div class="clear"></div>
     <hr>
     <div class="score">je***in&nbsp;<span class="score_start"><span class="action">★★★★</span>★</span>
-      <div class="score_dat pull-right"><small>2016/11/19</small></div>
+      <div class="score_dat pull-right text-muted"><small>2016/11/19</small></div>
       <div class="clear"></div>
-      <div class="score_content"><a href="20161119_comment.html">真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办</a></div>
-      <div class="score_img"><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2 pull-left"><img src="images/20160107_720X300_coffee.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3  col-sm-2 pull-left"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2 pull-left"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2 pull-left"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2 pull-left"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a></div>
-<div class="clear"></div>
-</div>
+      <div class="score_content">真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办</div>
+      <div class="score_img"><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2"><img src="images/20160107_720X300_coffee.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3  col-sm-2"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <a href="comment.html" class="btn btn-default btn-xs btn-info pull-right"><span class="glyphicon glyphicon-comment"></span>&nbsp;5&nbsp;回复</a>
+    <div class="clear"></div>
     <hr>
     <div class="score">je***in&nbsp;<span class="score_start"><span class="action">★★★★</span>★</span>
-      <div class="score_dat pull-right"><small>2016/11/19</small></div>
+      <div class="score_dat pull-right text-muted"><small>2016/11/19</small></div>
       <div class="clear"></div>
-      <div class="score_content"><a href="20161119_comment.html">真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办</a></div>
-      <div class="score_img"><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2 pull-left"><img src="images/20160107_720X300_coffee.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3  col-sm-2 pull-left"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2 pull-left"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2 pull-left"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2 pull-left"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a></div>
-<div class="clear"></div>
-</div>
+      <div class="score_content">真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办真她妈的太好吃了~以后吃报到怎么办</div>
+      <div class="score_img"><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2"><img src="images/20160107_720X300_coffee.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3  col-sm-2"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a><a href="images/20160314_460X460_01.jpg" class="swipebox col-xs-3 col-sm-2"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></a>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <a href="comment.html" class="btn btn-default btn-xs btn-info pull-right"><span class="glyphicon glyphicon-comment"></span>&nbsp;回复</a>
+    <div class="clear"></div>
     <hr>
-    <a href="20161119_all_score.html" class="btn btn-block">查看全部评价</a> </div>
+    <a href="all_score.html" class="btn btn-default btn-block">查看全部评价&nbsp;》》</a></div>
   <div style="height:46px"><!--純粹墊高用不被下方選單遮住,不要拿掉--></div>
+  
   <!--圖文詳情-->
-<div class="modal fade" id="detail_record" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content" data-dismiss="modal">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-        <div class="modal-title" id="myModalLabel"><div class="title_front pull-left">图</div><div class="title pull-left">文详情</div><div class="clear"></div></div>
-      </div>
-      <div class="modal-body">
-      唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静
-      <img src="images/1.jpg"><img src="images/2.jpg">唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀<img src="images/4.gif"><img src="images/5.jpg"><img src="images/6.gif"><img src="images/7.jpg">唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀<img src="images/8.jpg">
-      </div>
-      <div class="modal-footer">
-      <span class="glyphicon glyphicon-remove-circle text-muted" style="left:-50%"></span>
+  <div class="modal fade" id="detail_record" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" data-dismiss="modal">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+          <div class="modal-title" id="myModalLabel">
+            <div class="title_front pull-left">图</div>
+            <div class="title pull-left">文详情</div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="modal-body text-left"> 唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静 <img src="images/1.jpg"><img src="images/2.jpg">唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀<img src="images/4.gif"><img src="images/5.jpg"><img src="images/6.gif"><img src="images/7.jpg">唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀<img src="images/8.jpg"> </div>
+        <div class="modal-footer"> <span class="glyphicon glyphicon-remove text-muted" style="left:-50%"></span> </div>
       </div>
     </div>
   </div>
+  <!--圖文詳情end--> 
 </div>
-<!--圖文詳情end-->
-</div>
-
 
 <!--down_menu-開始-->
 <div class="down_menu">
-  <div class="down_menu_content">
-  <a href="http://wpa.qq.com/msgrd?v=3&uin=3024034865&site=qq&menu=yes" class="down_menu_bn down_menu_shoping_cat"><img src="images/down_menu_bn06_icon_40X40.png"><div class="down_menu_text">
-      客服</div></a><!--點擊可切換成QQ線上客服,上面QQ號連結是假的,需看之後眾籌客服QQ號是多少-->
-      
-      <a href="#" class="down_menu_bn down_menu_shoping_cat" id="attention_c"><img src="images/down_menu_bn05_icon_40X40.png">
-      <div class="down_menu_text">关注</div></a>
-    <a href="#" class="down_menu_bn down_menu_attention_active" id="attention_o"><img src="images/down_menu_bn05_icon_40X40.png"><div class="down_menu_text">已关注</div></a>
+  <div class="down_menu_content"> <a href="http://wpa.qq.com/msgrd?v=3&uin=3024034865&site=qq&menu=yes" class="down_menu_bn down_menu_shoping_cat"><img src="images/down_menu_bn06_icon_40X40.png">
+    <div class="down_menu_text"> 客服</div>
+    </a><!--點擊可切換成QQ線上客服,上面QQ號連結是假的,需看之後正式客服QQ號是多少--> 
     
-      <a href="shopping_cart.html" class="down_menu_bn down_menu_shoping_cat">
-      <div class="amount"><div class="amount_text">25</div></div>
-      <img src="images/down_menu_bn03.png"><div class="down_menu_text">
-      购物车</div></a>
-    <a href="shopping_cart.html" class="buy_now">立即购买</a><a href="#" class="add_shopping_cart">加入购物车</a><!--點擊加入購物車,顯示已加入購物車訊息,購物車數字增加-->
+    <a href="#" class="down_menu_bn down_menu_shoping_cat" id="attention_c"><img src="images/down_menu_bn05_icon_40X40.png">
+    <div class="down_menu_text">关注</div>
+    </a> <a href="#" class="down_menu_bn down_menu_attention_active" id="attention_o"><img src="images/down_menu_bn05_icon_40X40.png">
+    <div class="down_menu_text">已关注</div>
+    </a> <a href="shopping_cart.html" class="down_menu_bn down_menu_shoping_cat">
+    <div class="amount">
+      <div class="amount_text">25</div>
+    </div>
+    <img src="images/down_menu_bn03.png">
+    <div class="down_menu_text">购物车</div>
+    </a> <a href="shopping_cart.html" class="buy_now pull-right">&nbsp;&nbsp;立即购买&nbsp;&nbsp;</a><a href="#" class="add_shopping_cart pull-right" onClick="MM_popupMsg('已加入购物车')">加入购物车</a><!--點擊加入購物車,顯示已加入購物車訊息,購物車數字增加-->
     <div class="clear"></div>
   </div>
 </div>
-<!--down_menu-end-->
-
+<!--down_menu-end--> 
 
 <script src="js/jquery.min.js"></script> 
-<script type="text/javascript" src="swiper/swiper.3.1.7.jquery.min.js"></script>
+<script type="text/javascript" src="swiper/swiper.3.1.7.jquery.min.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/jquery.swipebox.min.js"></script> 
 <script>
-//改變上方CSS
-         $(".top_menu_content").addClass("top_menu_m");//增加css樣式
 //輪播程式
     var mySwiper = new Swiper('.swiper-container',{
 	loop: true,
@@ -142,8 +196,17 @@ $(document).ready(function(){
         $("#attention_o").hide();
 		$("#attention_c").show();
     });
+	//商品種類選單選中變色
+        $(".select_style li").click(function(){
+            tabIndex = $(this).index();
+            $(this).siblings(".style_options").removeClass("active");
+            $(this).addClass("active");
+        });
+		$("#select").click(function(){//切換選擇規格箭頭css動畫
+  $(".sp_icon").toggleClass("sp_icon_m");
 });
-</script>
+});
+</script> 
 <script type="text/javascript">//點圖放大程式
 	$( document ).ready(function() {
 			$( '.swipebox' ).swipebox({
@@ -151,17 +214,16 @@ $(document).ready(function(){
 			loopAtEnd : true,
 			//hideCloseButtonOnMobile : true,//隱藏關閉扭
 			})
-			//.on('click touchend','#swipebox-container', function(e){
+      });
+	  //$(function(){//本來是想改點任何地方也能關閉,但是一直改不出來.....
+//      $(document.body)
+//          .on('click touchend','#swipebox-slider .current img', function(e){
 //              return false;
 //          })
-//          .on('click touchend','#swipebox-container', function(e){
+//          .on('click touchend','#swipebox-slider .current', function(e){
 //              $('#swipebox-close').trigger('click');
 //          });
-      });
-	  //$('#swipebox-container').click(function(){ 
-	      
-      //$('#swipebox-close').trigger('click'); 
-//});
+//    });
 	</script>
 </body>
 </html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta name="description" content="电子商务平台">
+<title>易微优品</title>
+<link href="../16X16_yiwei_logo.ico" rel="SHORTCUT ICON">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#abgne_float_ad {
+	display: none;
+	position: absolute;
+	visibility: hidden;
+}
+#abgne_float_ad .abgne_close_ad {
+	display: block;
+	text-align: right;
+	cursor: pointer;
+	font-size: 12px;
+}
+.abgne_float_ad_m
+{
+animation: abgne_float_ad_m 5s ease-out 0s 1 running forwards;
+/* Firefox: */
+-moz-animation: abgne_float_ad_m 5s ease-out 0s 1 running forwards;
+/* Safari 和 Chrome: */
+-webkit-animation: abgne_float_ad_m 5s ease-out 0s 1 forwards;
+/* Opera: */
+-o-animation: abgne_float_ad_m 5s ease-out 0s 1 running forwards;
+}
+@keyframes abgne_float_ad_m
+{
+0%   {opacity:0.6;visibility: inherit;}
+50%   {opacity:0.6;visibility: inherit;}
+100% {opacity:0;visibility: hidden;}
+}
+
+@-moz-keyframes abgne_float_ad_m /* Firefox */
+{
+0%   {opacity:0.6;visibility: inherit;}
+50%   {opacity:0.6;visibility: inherit;}
+100% {opacity:0;visibility: hidden;}
+}
+
+@-webkit-keyframes abgne_float_ad_m /* Safari and Chrome */
+{
+0%   {opacity:0.6;visibility: inherit;}
+50%   {opacity:0.6;visibility: inherit;}
+100% {opacity:0;visibility: hidden;}
+}
+
+@-o-keyframes abgne_float_ad_m /* Opera */
+{
+0%   {opacity:0.6;visibility: inherit;}
+50%   {opacity:0.6;visibility: inherit;}
+100% {opacity:0;visibility: hidden;}
+}
+h1{/*文字漸層*/
+color: #000000;
+position: absolute;
+-webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,0)), to(rgba(0,0,0,0)));
+}
+</style>
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body style="height:2000px">
+<h1>12345</h1>
+
+</body>
+
+
+
+<div id="abgne_float_ad"><!--靠右置下top-->
+		<!--<span class="abgne_close_ad">[X]</span>-->
+        <button class="swiper_ad btn btn-default"><div class="glyphicon glyphicon-chevron-up"></div></button>
+	</div>
+    <script>
+//靠右浮動page top
+// 當網頁載入完
+$(window).load(function(){
+	var $win = $(window),
+		$ad = $('#abgne_float_ad').css('opacity', 0).show(),// 讓廣告區塊變透明且顯示出來
+		_width = $ad.width(),
+		_height = $ad.height(),
+		_diffY = 0, _diffX = 0,	// 距離右及下方邊距
+		_moveSpeed = 1000;	// 移動的速度
+ 
+	// 先把 #abgne_float_ad 移動到定點
+	$ad.css({
+		top: $(document).height(),
+		left: $win.width() - _width - _diffX,
+		opacity: 0.6 //透明度
+	});
+ 
+	// 幫網頁加上 scroll 及 resize 事件
+	$win.bind('scroll resize', function(){
+		var $this = $(this);
+ 
+		// 控制 #abgne_float_ad 的移動
+		$ad.stop().animate({
+			top: $this.scrollTop() + $this.height() /2+200,
+			left: $this.scrollLeft() + $this.width() - _width - _diffX,
+		}, _moveSpeed);
+	}).scroll();	// 觸發一次 scroll()
+ 
+	
+	$(window).scroll(function () {//卷軸監控
+        if ($(window).scrollTop() > 1000) {//卷軸高度大於600即顯示
+         $("#abgne_float_ad").css("visibility","inherit");
+     } else {
+		 $("#abgne_float_ad").css("visibility","hidden");
+    }
+    });
+	$(".swiper_ad").click(function(){//點擊到頁面最上方
+		$('html, body').scrollTop(0);//卷軸位置為0
+		return false;
+});
+	
+});
+
+</script>
+</html>

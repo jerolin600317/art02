@@ -17,11 +17,19 @@
   <div class="top_menu_content">
     <div class="top_logo_icon"><img src="images/logo.png"></div>
     <div class="top_serch">
-    <form action="search.html" method="post">
-    <div class="input-group"><div class="input-group-addon input-sm"><span class="glyphicon glyphicon-search"></span></div><input class="form-control input-sm" type="text" placeholder="请输入搜寻关键字"><div class="input-group-btn"><button type="submit" class="btn btn-default btn-sm">搜寻</button></div></div>
-    </form>
+      <form action="search.html" method="post">
+        <div class="input-group">
+          <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-search"></span></div>
+          <input class="form-control input-sm" type="text" placeholder="请输入搜索关键字">
+          <div class="input-group-btn">
+            <button type="submit" class="btn btn-default btn-sm">搜索</button>
+          </div>
+        </div>
+      </form>
     </div>
-    <a href="" class="top_news_icon"><div class="red_dot"><!--有新訊息未讀即出現此紅點--></div><img src="images/message_icon_40X40.png"></a>
+    <a href="news_center.html" class="top_news_icon">
+    <div class="red_dot"><!--有新訊息未讀即出現此紅點--></div>
+    <img src="images/message_icon_40X40.png"></a>
     <div class="clear"></div>
   </div>
 </div>
@@ -31,173 +39,196 @@
 <div class="content"> 
   <!--輪播廣告_開始-->
   <div class="event_bn">
-  <div class="swiper-container-event">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"> <a href="goods_page.html"><img src="images/720X360_event.jpg"></a> </div>
-      <div class="swiper-slide"> <a href="goods_page.html"><img src="images/720X360_event01.jpg"></a> </div>
-      <div class="swiper-slide"> <a href="goods_page.html"><img src="images/720X360_event.jpg"></a> </div>
-      <div class="swiper-slide"> <a href="goods_page.html"><img src="images/720X360_event01.jpg"></a> </div>
+    <div class="swiper-container-event">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"> <a href="goods_page.html"><img src="images/720X360_event.jpg"></a> </div>
+        <div class="swiper-slide"> <a href="goods_page.html"><img src="images/720X360_event01.jpg"></a> </div>
+        <div class="swiper-slide"> <a href="goods_page.html"><img src="images/720X360_event.jpg"></a> </div>
+        <div class="swiper-slide"> <a href="goods_page.html"><img src="images/720X360_event01.jpg"></a> </div>
+      </div>
     </div>
-  </div>
   </div>
   <!--輪播廣告_end--> 
   
   <!--廣告版位-->
   <div class="area_nobg row"> 
-      <!--單一廣告模組,後台可勾選可複選--> 
-      <a href="#" class="col-xs-12 padding_0"><img src="images/20170215_720X150_event01.jpg"></a> 
-      <!--兩個廣告模組,後台可勾選可複選--> 
-      <a href="#" class="col-xs-6 padding_0"><img src="images/360X150_01.gif"></a><a href="#" class="col-xs-6 padding_0"><img src="images/360X150_02.gif"></a> 
-      <!--三個廣告模組,後台可勾選可複選--> 
-      <!--<a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_01.gif"></a><a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_02.gif"></a><a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_03.gif"></a>-->
-      <div class="clear"></div>
-      </div>
-      <!--廣告版位end-->
+    <!--單一廣告模組,後台可勾選可複選--> 
+    <a href="#" class="col-xs-12 padding_0"><img src="images/20170215_720X150_event01.jpg"></a> 
+    <!--兩個廣告模組,後台可勾選可複選--> 
+    <a href="#" class="col-xs-6 padding_0"><img src="images/360X150_01.gif"></a><a href="#" class="col-xs-6 padding_0"><img src="images/360X150_02.gif"></a> 
+    <!--三個廣告模組,後台可勾選可複選--> 
+    <a href="#" class="col-xs-4 padding_0"><img src="images/240X150_01.gif"></a><a href="#" class="col-xs-4 padding_0"><img src="images/240X150_02.gif"></a><a href="#" class="col-xs-4 padding_0"><img src="images/240X150_03.gif"></a>
+    <div class="clear"></div>
+  </div>
+  <!--廣告版位end--> 
   
   <!--秒殺專區-->
   <div class="area_bg">
-  <div class="title_front pull-left">秒</div><div class="title pull-left">杀专区</div><a href="連結到相應時段的賣場" class="pull-right badge">前往卖场<div class="glyphicon glyphicon-chevron-right"></div></a><div class="pull-right" id="countdown"></div><div class="title_text text-danger pull-right">12点卖场</div><!--顯示目前時段賣場-->
-  <div class="clear"></div>
-  <hr>
-  <div class="sc_kill_g">
+    <div class="title_front pull-left">秒</div>
+    <div class="title pull-left">杀专区</div>
+    <a href="連結到相應時段的賣場" class="pull-right badge" style="margin-top:2px">前往专区<span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+    <div class="pull-right" id="countdown"></div>
+    <div class="title_text text-danger pull-right">12点专场<!--顯示目前時段賣場--></div>
+    <div class="clear"></div>
+    <hr>
+    <div class="sc_kill_g">
       <div class="sc_kill_c"><!--此區塊寬度由最下方程式控制，判斷顯示數量多寡即多寬-->
-      <div class="sc_kill_commodity"><a href=""><img src="images/20160314_460X460_01.jpg">
-      <div class="sc_kill_sum">¥4000.00</div><div class="sc_kill_sum sc_kill_op">¥4000.00</div></a><!--點擊前往該商品的買場-->
+        <div class="sc_kill_commodity"><a href="goods_page_time_limit.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="sc_kill_sum">¥4000.00</div>
+          <div class="sc_kill_sum sc_kill_op">¥4000.00</div>
+          </a><!--點擊前往該商品的買場--> 
         </div>
-      <div class="sc_kill_commodity"><a href=""><img src="images/20160314_460X460_02.jpg">
-      <div class="sc_kill_sum">¥4000.00</div><div class="sc_kill_sum sc_kill_op">¥4000.00</div></a>
-      </div>
-      <div class="sc_kill_commodity"><a href=""><img src="images/20160314_460X460_01.jpg">
-      <div class="sc_kill_sum">¥4000.00</div><div class="sc_kill_sum sc_kill_op">¥4000.00</div></a>
-        </div>
-      <div class="sc_kill_commodity"><a href=""><img src="images/20160314_460X460_02.jpg">
-      <div class="sc_kill_sum">¥4000.00</div><div class="sc_kill_sum sc_kill_op">¥4000.00</div></a>
-        </div>
-      <div class="sc_kill_commodity"><a href=""><img src="images/20160314_460X460_03.jpg">
-      <div class="sc_kill_sum">¥4000.00</div><div class="sc_kill_sum sc_kill_op">¥4000.00</div></a>
-        </div>
+        <div class="sc_kill_commodity"><a href="goods_page_time_limit.html"><img src="images/20160314_460X460_02.jpg">
+          <div class="sc_kill_sum">¥4000.00</div>
+          <div class="sc_kill_sum sc_kill_op">¥4000.00</div>
+          </a> </div>
+        <div class="sc_kill_commodity"><a href="goods_page_time_limit.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="sc_kill_sum">¥4000.00</div>
+          <div class="sc_kill_sum sc_kill_op">¥4000.00</div>
+          </a> </div>
+        <div class="sc_kill_commodity"><a href="goods_page_time_limit.html"><img src="images/20160314_460X460_02.jpg">
+          <div class="sc_kill_sum">¥4000.00</div>
+          <div class="sc_kill_sum sc_kill_op">¥4000.00</div>
+          </a> </div>
+        <div class="sc_kill_commodity"><a href="goods_page_time_limit.html"><img src="images/20160314_460X460_03.jpg">
+          <div class="sc_kill_sum">¥4000.00</div>
+          <div class="sc_kill_sum sc_kill_op">¥4000.00</div>
+          </a> </div>
         <div class="clear"></div>
-        </div>
       </div>
+    </div>
   </div>
-  <!--秒殺專區end-->
-  <!--常態活動區-->
+  <!--秒殺專區end--> 
+  
+  <!--常態活動區,由於目前常態活動會有變動,所以此區圖素需後台可上傳更換連結-->
   <div class="area_bg container-fluid">
-  <div>
-      <a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_01.gif"></a><a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_02.gif"></a><a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_03.gif"></a>
-      <div class="clear"></div></div>
-      </div>
-      <!--常態活動區end-->
-      <!--廣告版位-->
-  <div class="area_nobg row"> 
-      <!--單一廣告模組,後台可勾選可複選--> 
-      <a href="#" class="col-xs-12 padding_0"><img src="images/20170215_720X150_event01.jpg"></a> 
-      <!--兩個廣告模組,後台可勾選可複選--> 
-      <!--<a href="#" class="col-xs-6 padding_0"><img src="images/360X150_01.gif"></a><a href="#" class="col-xs-6 padding_0"><img src="images/360X150_02.gif"></a>--> 
-      <!--三個廣告模組,後台可勾選可複選--> 
-      <!--<a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_01.gif"></a><a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_02.gif"></a><a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_03.gif"></a>-->
+  <!--單一廣告模組,後台可勾選可複選--> 
+    <!--<a href="#" class="col-xs-12 padding_0"><img src="images/20170215_720X150_event01.jpg"></a>-->
+  <!--兩個廣告模組,後台可勾選可複選--> 
+    <!--<a href="#" class="col-xs-6 padding_0"><img src="images/360X150_01.gif"></a><a href="#" class="col-xs-6 padding_0"><img src="images/360X150_02.gif"></a>-->
+    <a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_01.gif"></a><a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_02.gif"></a><a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_03.gif"></a>
       <div class="clear"></div>
-      </div>
-      <!--廣告版位end-->
-      
+  </div>
+  <!--常態活動區end--> 
+  
+  <!--廣告版位,後台可新增板位-->
+  <div class="area_nobg row"> 
+    <!--單一廣告模組,後台可勾選可複選--> 
+    <a href="#" class="col-xs-12 padding_0"><img src="images/20170215_720X150_event01.jpg"></a> 
+    <!--兩個廣告模組,後台可勾選可複選--> 
+    <!--<a href="#" class="col-xs-6 padding_0"><img src="images/360X150_01.gif"></a><a href="#" class="col-xs-6 padding_0"><img src="images/360X150_02.gif"></a>--> 
+    <!--三個廣告模組,後台可勾選可複選--> 
+    <!--<a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_01.gif"></a><a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_02.gif"></a><a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_03.gif"></a>-->
+    <div class="clear"></div>
+  </div>
+  <!--廣告版位end--> 
+  
   <!--商品模組,可自訂名稱_開始-->
   <div class="area_bg">
-    <div class="title_front pull-left">热</div><div class="title pull-left">销商品</div><div class="pull-right"><a href="search.html" class="btn btn-default btn-xs">更多商品<span class="glyphicon glyphicon-chevron-right text-muted"></span></a></div><div class="title_text text-muted pull-right">天天畅销，件件热卖</div>
+    <div class="title_front pull-left">热</div>
+    <div class="title pull-left">销商品</div>
+    <div class="pull-right"><a href="search.html" class="btn btn-default btn-xs">更多商品<span class="glyphicon glyphicon-chevron-right text-muted"></span></a></div>
+    <div class="title_text text-muted pull-right">天天畅销，件件热卖</div>
     <div class="clear"></div>
     <div class="area_content"> 
       <!--商品模組廣告,後台可開關-->
       <hr>
-      <a href="#"><img src="images/20170215_720X150_event02.jpg"></a>
+      <a href="#"><img src="images/20170215_720X150_event02.jpg"></a> 
       <!--商品模組廣告end--> 
-      <!--商品,手機看一列兩個平板看一列四,個程式無須判斷,css控制,後台可制定數量-->
+      <!--商品,手機看一列兩個平板看一列四個，程式無須判斷,css控制,後台可制定顯示數量,需2的倍數-->
       <div class="row">
-      <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
-        <ul>
-          <li class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</li>
-          <li class="price">现金价：¥800.00</li>
-          <li class="price">易币<img src="images/yiwei_money_icon_40X40.png">：400</li>
-        </ul>
-        </a></div>
-      <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_03.jpg">
-        <ul>
-          <li class="commodity_name">变美面膜</li>
-          <li class="price">现金价：¥800.00</li>
-          <li class="price">易币<img src="images/yiwei_money_icon_40X40.png">：400</li>
-        </ul>
-        </a></div>
-      <div class="index_commodity col-xs-6 col-sm-3"><a href="#"><img src="images/20160314_460X460_01.jpg">
-        <ul>
-          <li class="commodity_name">变美面膜</li>
-          <li class="price">现金价：¥800.00</li>
-          <li class="price">易币<img src="images/yiwei_money_icon_40X40.png">：400</li>
-        </ul>
-        </a></div>
-      <div class="index_commodity col-xs-6 col-sm-3"><a href="#"><img src="images/20160314_460X460_03.jpg">
-        <ul>
-          <li class="commodity_name">变美面膜</li>
-          <li class="price">现金价：¥800.00</li>
-          <li class="price">易币<img src="images/yiwei_money_icon_40X40.png">：400</li>
-        </ul>
-        </a></div>
-        </div>
+        <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>80000.00</li><!--特價,後台需新增欄位-->
+            <li><span class="sc_kill_sum sc_kill_op">¥80000.00</span></li><!--原價市場價,後台需新增欄位-->
+            <!--萬元金額算極限了，如果有賣到十萬以上金額估計這平台又要改版了..不過我有寫過長會自動斷行-->
+          </ul>
+          </a></div>
+        <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>8000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥8000.00</span></li>
+          </ul>
+          </a></div>
+        <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>8000000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥8000000.00</span></li>
+          </ul>
+          </a></div>
+        <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>80000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥80000.00</span></li>
+          </ul>
+          </a></div>
+      </div>
       <!--商品end-->
       <div class="clear"><!--清除靠左版面用,請勿拿掉--></div>
     </div>
   </div>
-  <!--商品模組_end-->
+  <!--商品模組_end--> 
   
   <!--廣告版位-->
   <div class="area_nobg row"> 
-      <!--單一廣告模組,後台可勾選可複選--> 
-      <!--<a href="#" class="col-xs-12 padding_0"><img src="images/20170215_720X150_event01.jpg"></a>--> 
-      <!--兩個廣告模組,後台可勾選可複選--> 
-      <a href="#" class="col-xs-6 padding_0"><img src="images/360X150_01.gif"></a><a href="#" class="col-xs-6 padding_0"><img src="images/360X150_02.gif"></a> 
-      <!--三個廣告模組,後台可勾選可複選--> 
-      <!--<a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_01.gif"></a><a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_02.gif"></a><a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_03.gif"></a>-->
-      <div class="clear"></div>
-      </div>
-      <!--廣告版位end-->
+    <!--單一廣告模組,後台可勾選可複選--> 
+    <!--<a href="#" class="col-xs-12 padding_0"><img src="images/20170215_720X150_event01.jpg"></a>--> 
+    <!--兩個廣告模組,後台可勾選可複選--> 
+    <a href="#" class="col-xs-6 padding_0"><img src="images/360X150_01.gif"></a><a href="#" class="col-xs-6 padding_0"><img src="images/360X150_02.gif"></a> 
+    <!--三個廣告模組,後台可勾選可複選--> 
+    <!--<a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_01.gif"></a><a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_02.gif"></a><a href="#" class="col-xs-4 padding_0"><img src="images/event_240X150_03.gif"></a>-->
+    <div class="clear"></div>
+  </div>
+  <!--廣告版位end--> 
   
   <!--商品模組,可自訂名稱_開始-->
   <div class="area_bg">
-    <div class="title_front pull-left">推</div><div class="title pull-left">荐商品</div><div class="pull-right"><a href="search.html" class="btn btn-default btn-xs">更多商品<span class="glyphicon glyphicon-chevron-right text-muted"></span></a></div><div class="title_text text-muted pull-right">好货推荐，不买可惜</div>
+    <div class="title_front pull-left">推</div>
+    <div class="title pull-left">荐商品</div>
+    <div class="pull-right"><a href="search.html" class="btn btn-default btn-xs">更多商品<span class="glyphicon glyphicon-chevron-right text-muted"></span></a></div>
+    <div class="title_text text-muted pull-right">好货推荐，不买可惜</div>
     <div class="clear"></div>
     <div class="area_content"> 
-      <!--商品模組廣告,後台可開關-->
+      <!--商品模組廣告,後台可開關--> 
       <!--<hr>
-      <a href="#"><img src="images/event_720X150.jpg"></a>-->
+      <a href="#"><img src="images/event_720X150.jpg"></a>--> 
       <!--商品模組廣告end--> 
       <!--商品,一列兩個一組,後台可制定數量-->
       <div class="row">
-      <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
-        <ul>
-          <li class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</li>
-          <li class="price">现金价：¥800.00</li>
-          <li class="price">易币<img src="images/yiwei_money_icon_40X40.png">：400</li>
-        </ul>
-        </a></div>
-      <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_03.jpg">
-        <ul>
-          <li class="commodity_name">变美面膜</li>
-          <li class="price">现金价：¥800.00</li>
-          <li class="price">易币<img src="images/yiwei_money_icon_40X40.png">：400</li>
-        </ul>
-        </a></div>
-      <div class="index_commodity col-xs-6 col-sm-3"><a href="#"><img src="images/20160314_460X460_01.jpg">
-        <ul>
-          <li class="commodity_name">变美面膜</li>
-          <li class="price">现金价：¥800.00</li>
-          <li class="price">易币<img src="images/yiwei_money_icon_40X40.png">：400</li>
-        </ul>
-        </a></div>
-      <div class="index_commodity col-xs-6 col-sm-3"><a href="#"><img src="images/20160314_460X460_03.jpg">
-        <ul>
-          <li class="commodity_name">变美面膜</li>
-          <li class="price">现金价：¥800.00</li>
-          <li class="price">易币<img src="images/yiwei_money_icon_40X40.png">：400</li>
-        </ul>
-        </a></div>
-        </div>
+        <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>80000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥80000.00</span></li>
+          </ul>
+          </a></div>
+        <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>80000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥80000.00</span></li>
+          </ul>
+          </a></div>
+        <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>80000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥80000.00</span></li>
+          </ul>
+          </a></div>
+        <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>80000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥80000.00</span></li>
+          </ul>
+          </a></div>
+      </div>
       <!--商品end-->
       <div class="clear"><!--清除靠左版面用,請勿拿掉--></div>
     </div>
@@ -207,17 +238,19 @@
 </div>
 <!--down_menu-開始-->
 <div class="down_menu">
-  <div class="down_menu_content">
-    <a href="#" class="down_menu_bn active"><img src="images/down_menu_bn01.png"><div class="down_menu_text">
-      首　页</div></a>
-    <a href="main.html" class="down_menu_bn"><img src="images/down_menu_bn02.png"><div class="down_menu_text">
-      商品分类</div></a>
-    <a href="shopping_cart.html" class="down_menu_bn">
-      <div class="amount"><div class="amount_text">25</div></div>
-      <img src="images/down_menu_bn03.png"><div class="down_menu_text">
-      购物车</div></a>
-    <a href="login.html" class="down_menu_bn"><img src="images/down_menu_bn04.png"><div class="down_menu_text">
-      个人中心</div></a>
+  <div class="down_menu_content"> <a href="#" class="down_menu_bn active"><img src="images/down_menu_bn01.png">
+    <div class="down_menu_text"> 首　页</div>
+    </a> <a href="main.html" class="down_menu_bn"><img src="images/down_menu_bn02.png">
+    <div class="down_menu_text"> 商品分类</div>
+    </a> <a href="shopping_cart.html" class="down_menu_bn">
+    <div class="amount">
+      <div class="amount_text">25</div>
+    </div>
+    <img src="images/down_menu_bn03.png">
+    <div class="down_menu_text"> 购物车</div>
+    </a> <a href="login.html" class="down_menu_bn"><img src="images/down_menu_bn04.png">
+    <div class="down_menu_text"> 个人中心</div>
+    </a>
     <div class="clear"></div>
   </div>
 </div>
@@ -247,7 +280,7 @@ $(document).ready(function(){
   crossFade: true,//開啟淡出
 }
 });
-$(".sc_kill_c").css("width",100*5);//控制秒殺專區的寬，5為顯示商品數量因數量的不同寬也不同，100為固定值(一個商品個寬)
+$(".sc_kill_c").css("width",100*5);//控制秒殺專區的寬，5為顯示商品數量因數量的不同寬也不同，100為固定值(一個商品的寬)
 }); 
 </script>
 <script src="assets/countdown/jquery.countdown.js">//倒數計時主程式</script>

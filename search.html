@@ -9,23 +9,23 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body style="overflow:hidden">
 <!--top_menu-開始-->
 <div class="top_menu">
-  <div class="top_menu_content">
-    <div class="top_logo_icon"><img src="images/logo.png"></div>
+  <div class="top_menu_content_main">
+    <div class="top_logo_icon"><a href="index.html"><img src="images/logo.png"></a></div>
     <div class="top_serch">
       <form action="search.html" method="post">
         <div class="input-group">
           <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-search"></span></div>
-          <input class="form-control input-sm" type="text" placeholder="请输入搜寻关键字">
+          <input class="form-control input-sm" type="text" placeholder="请输入搜索关键字">
           <div class="input-group-btn">
-            <button type="submit" class="btn btn-default btn-sm">搜寻</button>
+            <button type="submit" class="btn btn-default btn-sm">搜索</button>
           </div>
         </div>
       </form>
     </div>
-    <a href="" class="top_news_icon">
+    <a href="news_center.html" class="top_news_icon">
     <div class="red_dot"><!--有新訊息未讀即出現此紅點--></div>
     <img src="images/message_icon_40X40.png"></a>
     <div class="clear"></div>
@@ -35,99 +35,218 @@
 
 <!--內容_開始-->
 <div class="main_content">
-  <div class="area_bg">
-    <div class="title_front pull-left">快</div>
-    <div class="title pull-left">速搜寻</div>
-    <div class="clear"></div>
-    <hr>
-    <!--熱門搜尋_開始,後台可操控熱門搜尋內容-->
-    <form action="search.html" method="post">
-      <div class="form-group">
-        <label>请选择分类：</label>
-        <select name="" class="form-control">
-          <option></option>
-          <option>美容彩妆</option>
-          <option>保健养身</option>
-          <option>酒水饮料</option>
-          <option>异国美食</option>
-        </select>
+
+  <div class="shopping_cat_menu">
+  <!--分類搜尋-->
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="margin-bottom:0px">
+    <!--從搜尋結果再做分類篩選,而非是商品分類,後台產品上架需制定,篩選條件最多四大項,基本上是參照京東平台-->
+  <div class="panel" role="tab">
+      <div class="btn-group btn-group-justified">
+      <div class="sort_sc btn btn-default btn-xs" data-toggle="collapse" data-parent="#accordion" data-target="#tab_01">品牌&nbsp;<!--選定次分類文字即換成選擇之次分類文字,選定狀態即在css裡增加active屬性--><span class="caret"></span></div>
+      <div class="sort_sc btn btn-default btn-xs" data-toggle="collapse" data-parent="#accordion" data-target="#tab_02">尺寸&nbsp;<span class="caret"></span></div>
+      <div class="sort_sc btn btn-default btn-xs" data-toggle="collapse" data-parent="#accordion" data-target="#tab_03">版型&nbsp;<span class="caret"></span></div>
+      <div class="sort_sc btn btn-default btn-xs" data-toggle="collapse" data-parent="#accordion" data-target="#tab_04">风格&nbsp;<span class="caret"></span></div>
       </div>
+      
+      <!--分類篩選裡的次分類,後台可以設定-->
+    <div id="tab_01" class="panel-collapse collapse" role="tabpanel">
+    <p></p>
+    <form action="search.html" method="post">
+    <div data-toggle="buttons">
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">sony</label>
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">Tomy</label>
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">华为</label>
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">苹果</label>
+      <div class="clear"></div>
+      <hr>
+      </div>
+      <div class="col-xs-6"><input type="reset" class="btn btn-warning btn-block" value="重置"></div>
+      <div class="col-xs-6"><input type="submit" class="btn btn-danger btn-block" value="确认"></div>
+      <!--由於可以複選,所以需點擊確認送出-->
     </form>
-    <a href="search.html" class="btn btn-default btn-sm" style="margin-bottom:6px">面膜</a> <a href="search.html" class="btn btn-default btn-sm" style="margin-bottom:6px">护肤护肤</a> <a href="search.html" class="btn btn-default btn-sm" style="margin-bottom:6px">面膜</a> <a href="search.html" class="btn btn-default btn-sm" style="margin-bottom:6px">护肤护肤护肤</a> <a href="search.html" class="btn btn-default btn-sm" style="margin-bottom:6px">面膜护肤</a> <a href="search.html" class="btn btn-default btn-sm" style="margin-bottom:6px">护肤护肤</a> <a href="search.html" class="btn btn-default btn-sm" style="margin-bottom:6px">面膜</a> <a href="search.html" class="btn btn-default btn-sm" style="margin-bottom:6px">护肤</a> </div>
-  <!--商品模組,可自訂名稱_開始-->
+    </div>
+    
+    <div id="tab_02" class="panel-collapse collapse" role="tabpanel">
+    <p></p>
+    <form action="search.html" method="post">
+    <div data-toggle="buttons">
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">30cm</label>
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">40cm</label>
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">50cm</label>
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">60cm</label>
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">70cm</label>
+      <div class="clear"></div>
+      <hr>
+      </div>
+      <div class="col-xs-6"><input name="" type="reset" class="btn btn-warning btn-block" value="重置"></div>
+      <div class="col-xs-6"><input type="submit" class="btn btn-danger btn-block" value="确认"></div>
+    </form>
+    </div>
+    <div id="tab_03" class="panel-collapse collapse" role="tabpanel">
+    <p></p>
+    <form action="search.html" method="post">
+    <div data-toggle="buttons">
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">乞丐装</label>
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">民族装</label>
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">垃圾装</label>
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">洞洞装</label>
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">国王的新衣</label>
+      <div class="clear"></div>
+      <hr>
+      </div>
+      <div class="col-xs-6"><input name="" type="reset" class="btn btn-warning btn-block" value="重置"></div>
+      <div class="col-xs-6"><input type="submit" class="btn btn-danger btn-block" value="确认"></div>
+    </form>
+    </div>
+    <div id="tab_04" class="panel-collapse collapse" role="tabpanel">
+    <p></p>
+    <form action="search.html" method="post">
+    <div data-toggle="buttons">
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">乞丐装</label>
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">民族装</label>
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">垃圾装</label>
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">洞洞装</label>
+      <label class="col-xs-6 col-sm-3 btn btn-default btn-sm">
+      <input type="checkbox" autocomplete="off">国王的新衣</label>
+      <div class="clear"></div>
+      <hr>
+      </div>
+      <div class="col-xs-6"><input name="" type="reset" class="btn btn-warning btn-block" value="重置"></div>
+      <div class="col-xs-6"><input type="submit" class="btn btn-danger btn-block" value="确认"></div>
+    </form>
+    </div>
+  </div>
+    
+</div>
+<!--分類搜尋end-->
+     </div>
+     
+     <div class="shopping_cat_list">
   <div class="area_bg">
     <div class="title_front pull-left">搜</div>
     <div class="title pull-left">寻结果</div>
-    <div class="title_text pull-left">正在搜寻：<span class="text-danger">面膜</span></div>
+    <div class="title_text pull-left text-muted">正在搜索：<span class="text-danger">面膜</span></div>
     <div class="clear"></div>
+    <hr>
     
+    <!--排序-->
+    <div class="sorting btn-group btn-group-justified">
+      <div class="btn btn-default btn-xs active"><!--增加active顯示目前排序-->最新上&nbsp;<span class="caret"></span></div>
+      <div class="btn btn-default btn-xs">销量高&nbsp;<span class="caret"></span></div>
+      <div class="btn btn-default btn-xs">价格低&nbsp;<span class="caret"></span></div>
+      <div class="btn btn-default btn-xs">评价多&nbsp;<span class="caret"></span></div>
+      </div>
+      <!--排序end-->
+      
     <!--搜尋商品-->
     <div class="row">
       <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
-        <ul>
-          <li class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</li>
-          <li class="price">现金价：¥800.00</li>
-          <li class="price">易币<img src="images/yiwei_money_icon_40X40.png">：400</li>
-        </ul>
-        </a></div>
-      <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_03.jpg">
-        <ul>
-          <li class="commodity_name">变美面膜</li>
-          <li class="price">现金价：¥800.00</li>
-          <li class="price">易币<img src="images/yiwei_money_icon_40X40.png">：400</li>
-        </ul>
-        </a></div>
-      <div class="index_commodity col-xs-6 col-sm-3"><a href="#"><img src="images/20160314_460X460_01.jpg">
-        <ul>
-          <li class="commodity_name">变美面膜</li>
-          <li class="price">现金价：¥800.00</li>
-          <li class="price">易币<img src="images/yiwei_money_icon_40X40.png">：400</li>
-        </ul>
-        </a></div>
-      <div class="index_commodity col-xs-6 col-sm-3"><a href="#"><img src="images/20160314_460X460_03.jpg">
-        <ul>
-          <li class="commodity_name">变美面膜</li>
-          <li class="price">现金价：¥800.00</li>
-          <li class="price">易币<img src="images/yiwei_money_icon_40X40.png">：400</li>
-        </ul>
-        </a></div>
-      <div class="index_commodity col-xs-6 col-sm-3"><a href="#"><img src="images/20160314_460X460_01.jpg">
-        <ul>
-          <li class="commodity_name">变美面膜</li>
-          <li class="price">现金价：¥800.00</li>
-          <li class="price">易币<img src="images/yiwei_money_icon_40X40.png">：400</li>
-        </ul>
-        </a></div>
-      <div class="index_commodity col-xs-6 col-sm-3"><a href="#"><img src="images/20160314_460X460_03.jpg">
-        <ul>
-          <li class="commodity_name">变美面膜</li>
-          <li class="price">现金价：¥800.00</li>
-          <li class="price">易币<img src="images/yiwei_money_icon_40X40.png">：400</li>
-        </ul>
-        </a></div>
-      <div class="index_commodity col-xs-6 col-sm-3"><a href="#"><img src="images/20160314_460X460_01.jpg">
-        <ul>
-          <li class="commodity_name">变美面膜</li>
-          <li class="price">现金价：¥800.00</li>
-          <li class="price">易币<img src="images/yiwei_money_icon_40X40.png">：400</li>
-        </ul>
-        </a></div>
-      <div class="index_commodity col-xs-6 col-sm-3"><a href="#"><img src="images/20160314_460X460_03.jpg">
-        <ul>
-          <li class="commodity_name">变美面膜</li>
-          <li class="price">现金价：¥800.00</li>
-          <li class="price">易币<img src="images/yiwei_money_icon_40X40.png">：400</li>
-        </ul>
-        </a></div>
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>8000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥8000.00</span></li>
+          </ul>
+          </a></div>
+      <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>8000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥8000.00</span></li>
+          </ul>
+          </a></div>
+      <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>8000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥8000.00</span></li>
+          </ul>
+          </a></div>
+      <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>8000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥8000.00</span></li>
+          </ul>
+          </a></div>
+      <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>8000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥8000.00</span></li>
+          </ul>
+          </a></div>
+      <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>8000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥8000.00</span></li>
+          </ul>
+          </a></div>
+      <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>8000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥8000.00</span></li>
+          </ul>
+          </a></div>
+      <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>8000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥8000.00</span></li>
+          </ul>
+          </a></div>
+          <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>8000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥8000.00</span></li>
+          </ul>
+          </a></div>
+          <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>8000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥8000.00</span></li>
+          </ul>
+          </a></div>
+          <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>8000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥8000.00</span></li>
+          </ul>
+          </a></div>
+          <div class="index_commodity col-xs-6 col-sm-3"><a href="goods_page.html"><img src="images/20160314_460X460_01.jpg">
+          <div class="commodity_name">变美面膜变美面膜变美变美面膜变美面膜变美变美面膜变美面膜变美</div>
+          <ul class="list-inline">
+            <li class="price"> <small class="price">¥</small>8000.00</li>
+            <li><span class="sc_kill_sum sc_kill_op">¥8000.00</span></li>
+          </ul>
+          </a></div>
       <!--商品end-->
       <div class="clear"><!--清除靠左版面用,請勿拿掉--></div>
     </div>
-  </div>
-  <!--推荐商品_end-->
-  <div class="area_nobg">
-    <div class="col-xs-12">
-      <div class="btn btn-default btn-block">更多搜寻结果</div>
-    </div>
+    <hr>
+    <button class="btn btn-default btn-block">显示更多搜索&nbsp;》》</button>
     <!--手機操作不適合做分頁切換頁面方式，如果用按鈕點擊後再撈資料進來向下捲動方便些;如果可以不用按按鈕，捲到底下自動撈資料進來更方便--> 
     
     <!--如果真沒辦法只能做成分頁請用下面這樣式--> 
@@ -135,15 +254,18 @@
   <nav>
   <ul class="pager">
     <li class="previous"><a href="#"><span class="glyphicon glyphicon-chevron-left text-muted"></span>&nbsp;上一页</a></li>
-    <li class="text-danger">1/100&nbsp;总共150笔记录</li>顯示 所在頁數/總共頁數
+    <li class="text-danger">1/100&nbsp;总共150笔记录</li><!--顯示 所在頁數/總共頁數
     <li class="next"><a href="#">下一页&nbsp;<span class="glyphicon glyphicon-chevron-right text-muted"></span></a></li>
   </ul>
 </nav>
-      </div>-->
+      </div>
+  </div>-->
+  <!--推荐商品_end-->
+</div>
+<div style="height:46px"><!--純粹墊高用不被下方選單遮住,不要拿掉--></div>
+</div>    
     
-    <div class="clear"><!--清除靠左版面用,請勿拿掉--></div>
-  </div>
-  <div style="height:46px"><!--純粹墊高用不被下方選單遮住,不要拿掉--></div>
+  
 </div>
 <!--down_menu-開始-->
 <div class="down_menu">
@@ -164,13 +286,52 @@
   </div>
 </div>
 <!--down_menu-end-->
+
+<!--靠右置下pagetop,可拔下來套用在其他需要的頁面,記得要連底下的js一起-->
+<div id="abgne_float_ad">
+ <button class="swiper_ad btn btn-default btn-sm"><div class="glyphicon glyphicon-arrow-up"></div></button>
+	</div>
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function(){
-    //改變上方CSS
-         $(".top_menu_content").addClass("top_menu_m");//增加css樣式
+    //滾動卷軸改變上方CSS
+    $('.shopping_cat_list').scroll(function () {
+        if ($('.shopping_cat_list').scrollTop() > 120) {
+         $(".top_menu").addClass("top_menu_h");//增加css樣式
+		 $(".main_content").addClass("main_content_h");//增加css樣式
+     } else {
+		 $(".top_menu").removeClass("top_menu_h");//刪除樣式
+		 $(".main_content").removeClass("main_content_h");//刪除樣式
+    }
+    });
+	//控制分類樣式
+	$('#accordion').on('show.bs.collapse', function () {
+     $('.sort_sc.btn:hover .caret').css('transform','rotate(180deg)');
+	 $('.sort_sc.btn:hover').css('border-bottom-color','#FFF');
+    });
+	$('#accordion').on('hide.bs.collapse', function () {
+     $('.sort_sc.collapsed .caret').css('transform','rotate(0deg)');
+	 $('.sort_sc.btn.collapsed').css('border-bottom-color','#ccc');
+    });
 }); 
+</script>
+
+
+<script>//靠右浮動page top
+	$('.shopping_cat_list').scroll(function () {//卷軸監控
+        if ($('.shopping_cat_list').scrollTop() > 640) {//卷軸高度大於640即顯示
+         $("#abgne_float_ad").fadeIn(1000);//淡入
+     } else {
+		 $("#abgne_float_ad").fadeOut(1000);//淡出
+    }
+    });
+	$(".swiper_ad").click(function(){//點擊到頁面最上方
+		$('.shopping_cat_list').animate({
+            scrollTop: 0
+        }, 700);
+});
+
 </script>
 </html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta name="description" content="电子商务平台">
+<title>易微优品</title>
+<link href="../16X16_yiwei_logo.ico" rel="SHORTCUT ICON">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--top_menu-開始-->
+<div class="top_menu">
+  <div class="top_menu_content_main"> <a href="javascript:history.go(-1);" class="return_icon"><img src="images/top_return_icon.png"></a> 
+    <div class="clear"><!--清除靠左版面用,請勿拿掉--></div>
+  </div>
+</div>
+<!--top_menu-end-->
+<div class="main_content"> 
+  <!--內容_開始-->
+  <div class="area_bg">
+  <div class="title_front pull-left">服</div>
+      <div class="title pull-left">务单详情</div>
+      <div class="clear"></div>
+      <hr>
+  <span>服务单号：20160730010515180</span><span class="pull-right">进度：<span class="point_green">待商家收货</span></span>
+    <div class="clear"></div>
+    <hr>
+    
+    <!--填寫發貨單號即出現快遞追蹤訊息-->
+    <a href="service_tracking.html"><h6 class="pull-left"><span class="text-muted">快递单号：</span>1234567890123&nbsp;&nbsp;中通快递</h6><div class="clear"></div>
+        <div class="commodity_name col-xs-11 padding_0">货品已由中通快递接手，正发往[鸡巴市]货品已由快递接手，正发往鸡巴市货品已由快递接手，正发往鸡巴市</div>
+        <div class="col-xs-1 padding_0 text-right">
+        <h6><span class="glyphicon glyphicon-chevron-right"></span></h6>
+      </div>
+      <div class="clear"></div>
+        <h6 class="text-right text-muted">2016/04/18&nbsp;14:38:38</h6></a>
+        <hr>
+        <!--end-->
+    
+    <div class="progress progress_g">
+      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:20%;"><!--style裡的20%表示進度條長度,分為六階段,0%,20%,40%,60%,80%,100%代表此訂單到達哪個階段--> 
+      </div>
+    </div>
+    <div class="schedule_g active"><!--class裡增加了active即是目前處理中的狀態-->提交申请</div>
+    <div class="schedule_g active">商家审核</div>
+    <div class="schedule_g">商家收货</div>
+    <div class="schedule_g">商家处理</div>
+    <div class="schedule_g">客户确认</div>
+    <div class="schedule_g">完成</div>
+    <div class="clear"></div>
+    
+    <!--進度到達"客戶確認"即出現下面欄位,點擊"已解決"該服務單即完成-->
+  <hr>
+  <a href="" class="btn btn-default col-xs-6">已解决</a><a href="" class="btn btn-warning col-xs-6">未解决</a>
+  <div class="clear"></div>
+  <!--end-->
+  
+  </div>
+  
+  
+  
+  
+  <div class="area_bg">
+    问题描述：
+    <hr>
+    超你妈的烂东西，用没多久就坏了，真他妈的太坑人
+    <!--有上傳照片即出現此區塊-->
+    <div class="upload_photo"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></div>
+    <!--end-->
+    <hr>
+    <div class="text-muted text-right">2017-08-28&nbsp;&nbsp;23：14：38</div>
+        </div>
+        
+        <div class="area_bg">
+    审核留言：
+    <hr>
+    很抱歉让您有不好的体验，本产品按摩棒是不防水的喔，请勿在潮湿的环境下使用，保固期间可进厂维修，人为造成的损坏将会酌收零件费用
+        </div>
+        
+  <div style="height:54px"><!--純粹墊高用不被下方選單遮住,不要拿掉--></div>
+</div>
+
+<div class="down_menu">
+  <div class="down_menu_content">
+  <div class="pay_content">
+  <a href="#" class="btn btn-default btn-block op_cancel">取消申请</a>
+  </div>
+  </div>
+  </div>
+
+<!--取消申請彈出視窗-->
+<div class="modal fade" id="cancel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="title_front pull-left">取</div>
+        <div class="title pull-left">消申请</div>
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-title" id="myModalLabel"> </div>
+      </div>
+      <form action="buy_service_list.html" method="post">
+      <div class="modal-body text-left">请选择取消原因：
+        <div class="radio">
+          <label>
+            <input type="radio" name="yw_m">
+            客服联系已经解决</label>
+            </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="yw_m">
+            申请错误</label>
+            </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="yw_m">
+            审核不通过</label>
+            </div>
+      </div>
+      <div class="modal-footer">
+        <input name="重設" type="reset" class="btn btn-default" value="取消" data-dismiss="modal">
+        <!--點擊"取消"後，取消折抵勾選-->
+        <input name="送出" type="submit" class="btn btn-danger" value="确认">
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+$(document).ready(function(){
+	$(".op_cancel").click(function(){//取消申請彈出視窗
+  $("#cancel").modal("show");
+});
+}); 
+</script>
+</html>

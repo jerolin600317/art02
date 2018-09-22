@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta name="description" content="电子商务平台">
+<title>易微优品</title>
+<link href="../16X16_yiwei_logo.ico" rel="SHORTCUT ICON">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+</script>
+</head>
+<body style="overflow:hidden">
+<!--top_menu-開始-->
+<div class="top_menu">
+  <div class="top_menu_content_main"> <a href="javascript:history.go(-1);" class="return_icon"><img src="images/top_return_icon.png"></a> <a class="top_menu_bn pull-right" data-toggle="collapse" data-parent="#accordion" href="#coll_01"><img src="images/top_menu_icon_40X40.png"></a>
+    <div class="clear"><!--清除靠左版面用,請勿拿掉--></div>
+  </div>
+  <!--hide_menu-開始-->
+  <div id="coll_01" class="panel-collapse collapse"> <a href="index.html" class="hid_menu text-center"><img src="images/down_menu_bn01.png">&nbsp;首　　页</a> <a href="main.html" class="hid_menu text-center"><img src="images/down_menu_bn02.png">&nbsp;商品分类</a> <a href="shopping_cart.html" class="hid_menu text-center"><img src="images/down_menu_bn03.png">&nbsp;购&nbsp;&nbsp;物&nbsp;&nbsp;车</a> <a href="login.html" class="hid_menu text-center"><img src="images/down_menu_bn04.png">&nbsp;个人中心</a> <a href="#coll_01" class="hid_menu_up text-center" data-toggle="collapse" data-parent="#accordion"><span class="glyphicon glyphicon-remove-circle"></span></a> </div>
+  <!--hide_menu-end--> 
+</div>
+<!--top_menu-end-->
+<div class="main_content"> 
+  <!--內容_開始-->
+  <div class="area_bg">
+    <div class="title_front pull-left">配</div>
+    <div class="title pull-left">送方式</div>
+    <div class="clear"></div>
+    <hr>
+    <a href="address.html">
+    <div class="post_office_border">
+      <h6> <span class="glyphicon glyphicon-user text-muted"></span>&nbsp;凡鸣鸣&nbsp;&nbsp;&nbsp;&nbsp; <span class="glyphicon glyphicon-phone text-muted"></span>&nbsp;1377****404&nbsp;&nbsp;&nbsp;&nbsp; <span class="pull-right"><span class="label label-danger">默认</span>&nbsp;&nbsp;<span class="label label-default">变更<span class="glyphicon glyphicon-chevron-right"></span></span></span>
+        <div class="clear"></div>
+      </h6>
+      <h6> <span class="glyphicon glyphicon-map-marker text-muted"></span>&nbsp;四川绵阳江油河小区四川绵阳江油河小区四川绵阳江油河小区四川绵阳江油河小区四川绵阳江油河小区四川绵阳江油河小区 </h6>
+    </div>
+    </a>
+    <hr>
+    <form>
+      <div class="radio" style="padding-left:10px">
+        <label id="cl_ads">
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" style="margin-top:1px" checked>
+          &nbsp;普通快递</label>
+      </div>
+      <div class="radio" style="padding-left:10px">
+        <label id="op_ads">
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" style="margin-top:1px">
+          &nbsp;上门取货 </label>
+      </div>
+      <div class="collapse" id="s_ads">
+      <select name="" class="form-control">
+        <!--未來會有不同的地點可取貨-->
+        <option>请选择取货地点</option>
+        <option>金外滩体验店</option>
+      </select></div>
+    </form>
+  </div>
+  <div class="area_bg">
+    <div class="title_front pull-left">支</div>
+    <div class="title pull-left">付明细</div>
+    <div class="clear"></div>
+    <hr>
+    <h6>可用现金余额：<!--<a href="payindex.html" class="btn btn-info btn-xs">&nbsp;现金充值&nbsp;》》</a>--><span class="price pull-right">¥4000000.00</span>
+      <div class="clear"></div>
+    </h6>
+    
+    <h6 class="pull-left panel" data-toggle="buttons" style="margin-bottom:10px">可用易币余额：
+      <label class="btn btn-default btn-xs" id="op_detail_record">
+        <input name="" type="checkbox" autocomplete="off" value="">
+        折抵</label></h6><!--為勾選狀態,彈窗失效--> 
+      <h6 class="price pull-right"><img src="images/yiwei_money_icon_40X40.png">123456789</h6>
+      <div class="clear"></div>
+    
+    <h6 class="pull-left panel" data-toggle="buttons" style="margin-bottom:10px">可用的折扣券：
+      <label class="btn btn-default btn-xs" id="op_use_coupons">
+        <input name="" type="checkbox" autocomplete="off" value="">
+        使用</label></h6>
+      <h6 class="pull-right">可用的折扣券&nbsp;<span class="price">3</span>&nbsp;张</h6>
+      <div class="clear"></div>
+      
+    <ul>
+      <li>商品总额：<span class="price pull-right">¥4000000.00</span></li>
+      <li>＋运　费：<span class="price pull-right">＋¥50.00</span></li>
+      <li>－返　现：满额折扣<!--符合折扣活動即顯示--><span class="price pull-right">－¥50.00</span><!--類似滿額折扣或是打折活動--></li>
+      <li>商品优惠：折扣券<!--勾選使用折扣券﹐顯示使用哪種優惠方式--><span class="price pull-right">－¥100.00</span><!--類似折扣券--></li>
+      <li id="emd" class="collapse">易币折抵：<!--彈窗設定後也可以由此來更改折抵數額-->
+        <select>
+          <option>3000</option>
+          <option>2000</option>
+          <option>1000</option>
+        </select>
+        <span class="price pull-right">－¥30.00</span><!--使用易幣折抵即出現此明細--></li>
+    </ul>
+    <hr>
+    <h4 class="price"><small class="price">实付总额：</small><span class="pull-right"><small class="price">¥</small>123456789.00</span></h4>
+  </div>
+  <div class="area_bg">
+    <div class="title_front pull-left">购</div>
+    <div class="title pull-left">物清单</div>
+    <div class="title_text text-muted pull-right">共计&nbsp;7&nbsp;件商品</div>
+    <div class="clear"></div>
+    <hr>
+    <div class="row"> <a href="goods_page.html">
+      <div class="col-xs-2 col-sm-1"><img src="images/20160314_460X460_01.jpg"></div>
+      <div class="col-xs-6 col-sm-9 padding_0">
+        <div class="product_name">变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜</div>
+      </div>
+      <div class="col-xs-4 col-sm-2 text-right">
+        <div class="price">¥20000.00</div>
+        <div>100gx1</div>
+        <!--單個重量X數量--> 
+        <!--後台會增設商品單一重量欄位，依照數量加乘,再依照購買總重量計算所需運費--> 
+      </div>
+      <div class="clear"></div>
+      </a> </div>
+    <hr>
+    <div class="row"> <a href="goods_page.html">
+      <div class="col-xs-2 col-sm-1"><img src="images/20160314_460X460_01.jpg"></div>
+      <div class="col-xs-6 col-sm-9 padding_0">
+        <div class="product_name">变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜</div>
+      </div>
+      <div class="col-xs-4 col-sm-2 text-right">
+        <div class="price">¥20000.00</div>
+        <div>100gx1</div>
+        <!--單個重量X數量--> 
+        <!--後台會增設商品單一重量欄位，依照數量加乘,再依照購買總重量計算所需運費--> 
+      </div>
+      <div class="clear"></div>
+      </a> </div>
+    <hr>
+    <div class="row"> <a href="goods_page.html">
+      <div class="col-xs-2 col-sm-1"><img src="images/20160314_460X460_01.jpg"></div>
+      <div class="col-xs-6 col-sm-9 padding_0">
+        <div class="product_name">变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜</div>
+      </div>
+      <div class="col-xs-4 col-sm-2 text-right">
+        <div class="price">¥20000.00</div>
+        <div>100gx1</div>
+        <!--單個重量X數量--> 
+        <!--後台會增設商品單一重量欄位，依照數量加乘,再依照購買總重量計算所需運費--> 
+      </div>
+      <div class="clear"></div>
+      </a> </div>
+    <hr>
+    <div class="row"> <a href="goods_page.html">
+      <div class="col-xs-2 col-sm-1"><img src="images/20160314_460X460_01.jpg"></div>
+      <div class="col-xs-6 col-sm-9 padding_0">
+        <div class="product_name">变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜</div>
+      </div>
+      <div class="col-xs-4 col-sm-2 text-right">
+        <div class="price">¥20000.00</div>
+        <div>100gx1</div>
+        <!--單個重量X數量--> 
+        <!--後台會增設商品單一重量欄位，依照數量加乘,再依照購買總重量計算所需運費--> 
+      </div>
+      <div class="clear"></div>
+      </a> </div>
+    <hr>
+    <div class="row"> <a href="goods_page.html">
+      <div class="col-xs-2 col-sm-1"><img src="images/20160314_460X460_01.jpg"></div>
+      <div class="col-xs-6 col-sm-9 padding_0">
+        <div class="product_name">变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜</div>
+      </div>
+      <div class="col-xs-4 col-sm-2 text-right">
+        <div class="price">¥20000.00</div>
+        <div>100gx1</div>
+        <!--單個重量X數量--> 
+        <!--後台會增設商品單一重量欄位，依照數量加乘,再依照購買總重量計算所需運費--> 
+      </div>
+      <div class="clear"></div>
+      </a> </div>
+    <hr>
+    <div class="row"> <a href="goods_page.html">
+      <div class="col-xs-2 col-sm-1"><img src="images/20160314_460X460_01.jpg"></div>
+      <div class="col-xs-6 col-sm-9 padding_0">
+        <div class="product_name">变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜变美美面膜</div>
+      </div>
+      <div class="col-xs-4 col-sm-2 text-right">
+        <div class="price">¥20000.00</div>
+        <div>100gx1</div>
+        <!--單個重量X數量--> 
+        <!--後台會增設商品單一重量欄位，依照數量加乘,再依照購買總重量計算所需運費--> 
+      </div>
+      <div class="clear"></div>
+      </a> </div>
+  </div>
+  <div class="area_bg">
+    <div class="title_front pull-left">订</div>
+    <div class="title pull-left">单备注</div>
+    <div class="clear"></div>
+    <hr>
+    <div class="row-fluid">
+      <form>
+        <textarea class="form-control" name="textarea" cols="" rows="5"></textarea>
+      </form>
+    </div>
+  </div>
+  <div style="height:54px"><!--純粹墊高用不被下方選單遮住,不要拿掉--></div>
+</div>
+<div class="down_menu">
+  <div class="down_menu_content">
+    <div class="pay_content"> <a href="#pay_content" id="glyphicon-chevron" data-toggle="collapse" class="btn btn-default btn-block">请选择支付方式&nbsp;<span class="sp_icon glyphicon glyphicon-chevron-right"></span> </a>
+      <div id="pay_content" class="collapse">
+        <hr>
+        <!--<a href="ordersproduct.html" class="btn btn-primary btn-block" onClick="MM_popupMsg('订单已提交，请于24小时内完成付款，否则此订单将失效')">先下单后支付</a>點擊直接前往支付
+        <p></p>-->
+        <a href="ordersproduct.html" class="btn btn-success btn-block">微信支付</a><!--點擊直接前往支付-->
+        <p></p>
+        <a href="ordersproduct.html" class="btn btn-danger btn-block">支付宝支付</a><!--點擊直接前往支付-->
+        <p></p>
+        <a href="ordersproduct.html" class="btn btn-info btn-block">网银支付</a><!--點擊直接前往支付-->
+        <!--<p></p>
+        <a href="ordersproduct.html" class="btn btn-warning btn-block">现金帐户余额支付</a>點擊直接前往支付,餘額如果不足引導至充值頁面--> 
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<!--易幣彈出視窗-->
+<div class="modal fade" id="detail_record" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="title_front pull-left">易</div>
+        <div class="title pull-left">币折抵</div>
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-title" id="myModalLabel"> </div>
+      </div>
+      <div class="modal-body text-left"> 请選擇易幣折抵数额：<small class="text-danger">最高折抵总额30％</small>
+        <div class="radio"><!--顯示數額自動判斷總額的30%所需易幣,以整數為單位,像京東的京豆一樣(京豆是1000起跳1000京豆=¥10,看易幣要怎麼設置比例，上面的數額是我亂寫的)-->
+          <label>
+            <input type="radio" name="yw_m">
+            3000</label>
+          <span class="pull-right price">可折抵&nbsp;¥30</span> </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="yw_m">
+            2000</label>
+          <span class="pull-right price">可折抵&nbsp;¥20</span> </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="yw_m">
+            1000</label>
+          <span class="pull-right price">可折抵&nbsp;¥10</span> </div>
+      </div>
+      <div class="modal-footer">
+        <input name="重設" type="reset" class="btn btn-default" id="c_emd" value="取消" data-dismiss="modal">
+        <!--點擊"取消"後，取消折抵勾選-->
+        <div class="btn btn-danger" data-toggle="collapse" data-target="#emd" data-dismiss="modal">确认</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--折扣券彈出視窗-->
+<div class="modal fade" id="use_coupons" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="title_front pull-left">使</div>
+        <div class="title pull-left">用折扣券</div>
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-title" id="myModalLabel"> </div>
+      </div>
+      <div class="modal-body text-left"> 请選擇折扣券：<small class="text-danger">每笔消费仅限使用一张</small>
+        <div class="radio"><!--顯示滿足條件可使用的折扣券-->
+          <label>
+            <input type="radio" name="yw_m" style="margin-top:1px">
+            30&nbsp;&nbsp;<span class="label label-warning">2017-09-28到期</span></label>
+          <span class="pull-right price">可折抵&nbsp;¥30</span> </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="yw_m" style="margin-top:1px">
+            20&nbsp;&nbsp;<span class="label label-warning">2017-09-28到期</span></label>
+          <span class="pull-right price" style="margin-top:1px">可折抵&nbsp;¥20</span> </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="yw_m" style="margin-top:1px">
+            10&nbsp;&nbsp;<span class="label label-warning">2017-09-28到期</span></label>
+          <span class="pull-right price">可折抵&nbsp;¥10</span> </div>
+      </div>
+      <div class="modal-footer">
+        <input name="重設" type="reset" class="btn btn-default" id="c_emd" value="取消" data-dismiss="modal">
+        <!--點擊"取消"後，取消折抵勾選-->
+        <div class="btn btn-danger" data-dismiss="modal">确认</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+$("#glyphicon-chevron").click(function(){//切換支付方式箭頭css動畫
+  $(".sp_icon").toggleClass("sp_icon_m");
+});
+
+$("#op_ads").click(function(){//點擊上門取貨顯示取貨地點
+	$("#s_ads").collapse("show");
+});
+$('#s_ads').on('shown.bs.collapse', function () {//當取貨地點顯示時,選回普通快遞即隱藏取貨地點
+$("#cl_ads").click(function(){
+	$("#s_ads").collapse("hide");
+});
+})
+
+$("#op_detail_record").click(function(){//勾選折抵易幣彈出視窗
+  $("#detail_record").modal("show");
+});
+
+$("#op_use_coupons").click(function(){//勾選使用折扣券彈出視窗
+  $("#use_coupons").modal("show");
+});
+
+$('#emd').on('shown.bs.collapse', function () {//當折抵易幣欄位顯示後，點擊取消易幣折抵欄位隱藏
+  $("#c_emd").click(function(){
+  $("#emd").collapse("hide");
+});
+$("#op_detail_record").click(function(){//當折抵易幣欄位顯示後，點擊折抵易幣折抵欄位隱藏
+  $("#emd").collapse("hide");
+});
+})
+});
+</script>
+</html>

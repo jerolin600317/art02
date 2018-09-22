@@ -1,8 +1,8 @@
 .countdownHolder{
 	/* [disabled]width: 450px; */
-	font: 10px 'Open Sans Condensed',sans-serif;
+	font: 12px 'Open Sans Condensed',sans-serif;
 	/* [disabled]text-align: center; */
-	letter-spacing: -6px;
+	letter-spacing: -2px;
 	position: relative;
 	z-index: 97;
 	margin-top: 4px;
@@ -10,39 +10,37 @@
 	margin-bottom: -36px;
 	margin-left: 8px;*/
 	padding-right:6px;
-	height:1.3em;
+	height:1.5em;
 }
 
 .position{
 	display: inline-block;
-	height: 1.3em;
+	height: 1.5em;
 	overflow: hidden;
 	position: relative;
 	width: 1.2em;
 	text-align: center;
-	border: 1px solid #dbdbdb;
-	/*margin-bottom: -6px;*/	/*border-radius:0.3em;*/
+	/*border: 1px solid #dbdbdb;*/
+	/*margin-bottom: -6px;*/
+	border-radius:0.3em;
+	background-color: #c00;
 }
 
 .digit{
-	font: 10px 'Open Sans Condensed',sans-serif;
-	-webkit-transform : scale(0.83);/*該死的chrome最小字體 11px=0.91 10px=0.83 9px=0.75 8px=0.75 8px=0.66*/
-	-o-transform : scale(0.83); /*opera*/
+	font: 12px 'Open Sans Condensed',sans-serif;
+	
 	/*position: absolute;*/
 	display: block;
 	/*width: 1em;*/
-	background-color: #FFF;
 	/*border-radius: 2px;*/
 	text-align: center;
-	color: #C00;
+	color: #fff;
 	letter-spacing: -1px;
 	/*padding-right: 1px;*/
 }
 
 .digit.static{
-	font: 10px 'Open Sans Condensed',sans-serif;
-	-webkit-transform : scale(0.83);/*該死的chrome最小字體 11px=0.91 10px=0.83 9px=0.75 8px=0.75 8px=0.66*/
-	-o-transform : scale(0.83); /*opera*/
+	font: 12px 'Open Sans Condensed',sans-serif;
 	/*margin-top:-1px;*/
 	/* [disabled]box-shadow:1px 1px 1px rgba(4, 4, 4, 0.35); */
 	/* [disabled]background-image: linear-gradient(bottom, #3A3A3A 50%, #444444 50%); */
@@ -57,8 +55,8 @@
 		color-stop(0.5, #3A3A3A),
 		color-stop(0.5, #444444)
 	); */
-/*	padding-top: 2px;*/
-line-height:1.3em;
+	padding-top: 1px;
+line-height:1.5em;
 }
 
 /**
@@ -77,8 +75,8 @@ line-height:1.3em;
 
 .countDiv{
 	display:inline-block;
-	width:12px;
-	height:1.3em;
+	width:6px;
+	height:1.5em;
 	position:relative;
 }
 
@@ -90,7 +88,7 @@ line-height:1.3em;
 	background-color: #999;
 	border-radius: 50%;
 	left: 50%;
-	margin-left: -2px;
+	margin-left: -1px;
 	top: 0.5em;
 	/* [disabled]box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5); */
 	content: '';

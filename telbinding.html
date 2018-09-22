@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta name="description" content="电子商务平台">
+<title>易微优品</title>
+<link href="../16X16_yiwei_logo.ico" rel="SHORTCUT ICON">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--top_menu-開始-->
+<div class="top_menu">
+  <div class="top_menu_content_main"> <a href="javascript:history.go(-1);" class="return_icon"><img src="images/top_return_icon.png"></a>
+    <div class="clear"><!--清除靠左版面用,請勿拿掉--></div>
+  </div>
+</div>
+<!--top_menu-end-->
+
+<!--內容_開始-->
+<div class="main_content">
+  <div class="area_bg">
+  <div class="title_front pull-left">绑</div>
+    <div class="title pull-left">定手机</div>
+    <div class="clear"></div>
+    <hr>
+    <form action="setting.html" method="post">
+  <div class="form-group">
+        <label class="control-label text-muted"><span class="glyphicon glyphicon-phone"></span>&nbsp;手机号码</label>
+        <input type="tel" class="form-control" placeholder="请输入您的手机号码">
+        <!--<h6 class="point_red"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;温馨提示：可用手机号码选择帐号登录</h6>-->
+      </div>
+  <div class="form-group">
+        <label class="control-label text-muted"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;手机验证码</label>
+        <div class="input-group">
+    <input type="tel" class="form-control" placeholder="请输入手机收到的验证码">
+    <span class="input-group-btn">
+    <input type="button" class="btn btn-info" value="获取手机验证码" data-toggle="modal" data-target="#detail_record"></span>
+    </div>
+      </div>
+  <input class="btn btn-danger btn-block" type="submit" value="绑定">
+</form>   
+
+<hr> 
+  </div>
+</div>
+
+<!--彈出驗證碼視窗-->
+<div class="modal fade" id="detail_record" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+          <div class="modal-title" id="myModalLabel">
+          </div>
+        </div>
+        <div class="modal-body text-left"> 
+        <div class="form-group row">
+        <label class="control-label text-muted col-xs-12"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;验证码</label>
+        <div class="col-xs-8 col-sm-10"><input type="text" class="form-control" placeholder="请输入右图内数字"></div><div class="col-xs-4 col-sm-2 v_code"><img src="images/1418719022-2238644537.jpg"></div>
+        <div class="clear"></div>
+      </div>
+        </div>
+        <div class="modal-footer"> <input class="btn btn-danger btn-block" data-dismiss="modal" type="submit" value="确　　认"> </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>

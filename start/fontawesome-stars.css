@@ -1,0 +1,25 @@
+.br-theme-fontawesome-stars .br-widget {
+  height: 28px;
+}
+.br-theme-fontawesome-stars .br-widget a {
+	font: normal normal normal 30px/1 FontAwesome;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	text-decoration: none;
+	margin-right: 0px;
+	letter-spacing: 0.25em;
+	float:left;
+}
+.br-theme-fontawesome-stars .br-widget a:after {
+	content: '★';
+	color: #AAAAAA;
+}
+.br-theme-fontawesome-stars .br-widget a.br-active:after {
+	color: #FF9900;
+}
+.br-theme-fontawesome-stars .br-widget a.br-selected:after {
+  color: #FF9900;
+}
+.br-theme-fontawesome-stars .br-widget .br-current-rating {
+  display: none;
+}

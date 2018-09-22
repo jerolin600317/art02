@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta name="description" content="电子商务平台">
+<title>易微优品</title>
+<link href="../16X16_yiwei_logo.ico" rel="SHORTCUT ICON">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="start/fontawesome-stars.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="start/jquery.barrating.min.js"></script>
+</head>
+<body>
+<!--top_menu-開始-->
+<div class="top_menu">
+  <div class="top_menu_content_main"> <a href="javascript:history.go(-1);" class="return_icon"><img src="images/top_return_icon.png"></a>
+    <div class="clear"><!--清除靠左版面用,請勿拿掉--></div>
+  </div>
+</div>
+<!--top_menu-end-->
+<div class="main_content"> 
+  <!--內容_開始-->
+  <div class="area_bg">
+    <div class="title_front pull-left">评</div>
+    <div class="title pull-left">价晒单</div>
+    <div class="clear"></div>
+    <hr>
+    <div class="col-xs-3 col-sm-2 padding_0"><img src="images/20160314_460X460_01.jpg"></div>
+    <div class="col-xs-9 col-sm-10">
+      <div class="br-wrapper br-theme-fontawesome-stars control-group">
+        <h6 class="text-muted">评分：</h6>
+        <select id="example" name="rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        </div>
+    </div>
+    <div class="clear"></div>
+  <hr>
+      <textarea cols="" rows="5" class="form-control" placeholder="这次购买的商品满意吗?写点心得给其他顾客参考吧~长度在5~100字之间"></textarea>
+      </div>
+      <div class="area_bg">
+      <div class="title_front pull-left">添</div>
+    <div class="title pull-left">加图片</div>
+    <div class="title_text text-muted pull-left">(您最多只能上传三张图片)</div>
+    <div class="clear"></div>
+    <hr>
+      <div class="upload_photo"><a href="#" class="btn btn-default btn-lg glyphicon glyphicon-camera"></a> <img src="images/20160314_460X460_01.jpg" class="img-thumbnail"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"><img src="images/20160314_460X460_01.jpg" class="img-thumbnail"></div>
+      <p></p>
+      <a href="evaluation.html" class="btn btn-block btn-large btn-info">发表评价</a><!--發表完跳轉待評價清單-->
+      <hr>
+  </div>
+</div>
+<script type="text/javascript">//評分星星程式
+   $(function() {
+      $('#example').barrating({
+        theme: 'fontawesome-stars',
+		initialRating:5//初始值設定五顆星
+      });
+   });
+</script>
+</body>
+</html>
