@@ -1,0 +1,259 @@
+/*
+animation-name: myfirst;规定 @keyframes 动画的名称
+animation-duration: 5s;规定动画完成一个周期所花费的秒或毫秒。默认是 0。
+animation-timing-function: linear;规定动画的速度曲线。默认是 "ease"。
+animation-delay: 2s;规定动画何时开始。默认是 0。
+animation-iteration-count: infinite;规定动画被播放的次数。默认是 1。
+animation-direction: alternate;规定动画是否在下一周期逆向地播放。默认是 "normal"。
+animation-play-state: running;规定动画是否正在运行或暂停。默认是 "running"。
+animation: myfirst 0.5s linear 0s 1 running forwards;簡寫
+*/
+.f_bg_m
+{
+animation: f_bg_m 0.5s ease-out 0s 1 running forwards;
+/* Firefox: */
+-moz-animation: f_bg_m 0.5s ease-out 0s 1 running forwards;
+/* Safari 和 Chrome: */
+-webkit-animation: f_bg_m 0.5s ease-out 0s 1 forwards;
+/* Opera: */
+-o-animation: f_bg_m 0.5s ease-out 0s 1 running forwards;
+}
+@keyframes f_bg_m
+{
+0%   {transform:translateY(0%);}
+75%  {transform:translateY(10%);}
+100% {transform:translateY(0%);}
+}
+
+@-moz-keyframes f_bg_m /* Firefox */
+{
+0%   {transform:translateY(0%);}
+75%  {transform:translateY(10%);}
+100% {transform:translateY(0%);}
+}
+
+@-webkit-keyframes f_bg_m /* Safari and Chrome */
+{
+0%   {-webkit-transform:translateY(0%);}
+75%  {-webkit-transform:translateY(10%);}
+100% {-webkit-transform:translateY(0%);}
+}
+
+@-o-keyframes f_bg_m /* Opera */
+{
+0%   {transform:translateY(0%);}
+75%  {transform:translateY(10%);}
+100% {transform:translateY(0%);}
+}
+.red_cp_m
+{
+animation: red_cp_m 0.5s linear 1.5s 1 running forwards;
+/* Firefox: */
+-moz-animation: red_cp_m 0.5s linear 1.5s 1 running forwards;
+/* Safari 和 Chrome: */
+-webkit-animation: red_cp_m 0.5s linear 1.5s 1 forwards;
+/* Opera: */
+-o-animation: red_cp_m 0.5s linear 1.5s 1 running forwards;
+}
+@keyframes red_cp_m
+{
+0%   { opacity:1;}
+100% { opacity:0;}
+}
+
+@-moz-keyframes red_cp_m /* Firefox */
+{
+0%   { opacity:1;}
+100% { opacity:0;}
+}
+
+@-webkit-keyframes red_cp_m /* Safari and Chrome */
+{
+0%   { opacity:1;}
+100% { opacity:0;}
+}
+
+@-o-keyframes red_cp_m /* Opera */
+{
+0%   { opacity:1;}
+100% { opacity:0;}
+}
+
+.red_op_m
+{
+animation: red_op_m 0.5s linear 1s 1 running forwards;
+/* Firefox: */
+-moz-animation: red_op_m 0.5s linear 1s 1 running forwards;
+/* Safari 和 Chrome: */
+-webkit-animation: red_op_m 0.5s linear 1s 1 forwards;
+/* Opera: */
+-o-animation: red_op_m 0.5s linear 1s 1 running forwards;
+}
+@keyframes red_op_m
+{
+0%   {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes red_op_m /* Firefox */
+{
+0%   {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes red_op_m /* Safari and Chrome */
+{
+0%   {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes red_op_m /* Opera */
+{
+0%   {opacity:0;}
+100% {opacity:1;}
+}
+.gift_m
+{
+animation: gift_m 0.5s linear 1.5s 1 running forwards;
+/* Firefox: */
+-moz-animation: gift_m 0.5s linear 1.5s 1 running forwards;
+/* Safari 和 Chrome: */
+-webkit-animation: gift_m 0.5s linear 1.5s 1 forwards;
+/* Opera: */
+-o-animation: gift_m 0.5s linear 1.5s 1 running forwards;
+}
+@keyframes gift_m
+{
+0%   {transform:translateY(0%) scale(0,0); opacity:0;}
+70% {transform:translateY(-100%) scale(0.8,0.8); opacity:1;}
+100% {transform:translateY(-30%) scale(1,1); opacity:1;}
+}
+
+@-moz-keyframes gift_m /* Firefox */
+{
+0%   {transform:translateY(0%) scale(0,0); opacity:0;}
+70% {transform:translateY(-100%) scale(0.8,0.8); opacity:1;}
+100% {transform:translateY(-30%) scale(1,1); opacity:1;}
+}
+
+@-webkit-keyframes gift_m /* Safari and Chrome */
+{
+0%   {-webkit-transform:translateY(0%) scale(0,0); opacity:0;}
+70% {-webkit-transform:translateY(-100%) scale(0.8,0.8); opacity:1;}
+100% {-webkit-transform:translateY(-30%) scale(1,1); opacity:1;}
+}
+
+@-o-keyframes gift_m /* Opera */
+{
+0%   {transform:translateY(0%) scale(0,0); opacity:0;}
+70% {transform:translateY(-100%) scale(0.8,0.8); opacity:1;}
+100% {transform:translateY(-30%) scale(1,1); opacity:1;}
+}
+.gift_name_m
+{
+animation: gift_name_m 0.5s ease-out 2s 1 running forwards;
+/* Firefox: */
+-moz-animation: gift_name_m 0.5s ease-out 2s 1 running forwards;
+/* Safari 和 Chrome: */
+-webkit-animation: gift_name_m 0.5s ease-out 2s 1 forwards;
+/* Opera: */
+-o-animation: gift_name_m 0.5s ease-out 2s 1 running forwards;
+}
+@keyframes gift_name_m
+{
+0%   {height:0px; margin-top:0px; opacity:0;}
+100% {height:100%; margin-top:6px;opacity:1;}
+}
+
+@-moz-keyframes gift_name_m /* Firefox */
+{
+0%   {height:0%; margin-top:0px; opacity:0;}
+100% {height:100%; margin-top:6px;opacity:1;}
+}
+
+@-webkit-keyframes gift_name_m /* Safari and Chrome */
+{
+0%   {height:0%; margin-top:0px; opacity:0;}
+100% {height:100%; margin-top:6px;opacity:1;}
+}
+
+@-o-keyframes gift_name_m /* Opera */
+{
+0%   {height:0%; margin-top:0px; opacity:0;}
+100% {height:100%; margin-top:6px;opacity:1;}
+}
+.prize_bn_m
+{
+animation: prize_bn_m 0.8s ease-out 3s 1 running forwards;
+/* Firefox: */
+-moz-animation: prize_bn_m 0.8s ease-out 3s 1 running forwards;
+/* Safari 和 Chrome: */
+-webkit-animation: prize_bn_m 0.8s ease-out 3s 1 forwards;
+/* Opera: */
+-o-animation: prize_bn_m 0.8s ease-out 3s 1 running forwards;
+}
+@keyframes prize_bn_m
+{
+0%   {transform:translateY(0%); opacity:0; visibility:hidden;}
+100% {transform:translateY(80%); opacity:1; visibility:inherit}
+}
+
+@-moz-keyframes prize_bn_m /* Firefox */
+{
+0%   {transform:translateY(0%); opacity:0; visibility:hidden;}
+100% {transform:translateY(80%); opacity:1; visibility:inherit}
+}
+
+@-webkit-keyframes prize_bn_m /* Safari and Chrome */
+{
+0%   {-webkit-transform:translateY(0%); opacity:0;}
+100% {-webkit-transform:translateY(80%); opacity:1;}
+}
+
+@-o-keyframes prize_bn_m /* Opera */
+{
+0%   {transform:translateY(0%); opacity:0; visibility:hidden;}
+100% {transform:translateY(80%); opacity:1; visibility:inherit}
+}
+
+.start_bn_m
+{
+animation: start_bn_m 0.5s ease-out 0s 1 running forwards;
+/* Firefox: */
+-moz-animation: start_bn_m 0.5s ease-out 0s 1 running forwards;
+/* Safari 和 Chrome: */
+-webkit-animation: start_bn_m 0.5s ease-out 0s 1 forwards;
+/* Opera: */
+-o-animation: start_bn_m 0.5s ease-out 0s 1 running forwards;
+}
+@keyframes start_bn_m
+{
+0%   {transform:translateY(0%);}
+50%  {transform:translateY(10%); opacity:1;height:300px}
+99.9% {transform:translateY(-100%); opacity:0; visibility:inherit}
+100% { visibility:hidden; height:500px}
+}
+
+@-moz-keyframes start_bn_m /* Firefox */
+{
+0%   {transform:translateY(0%);}
+50%  {transform:translateY(10%); opacity:1;height:300px}
+99.9% {transform:translateY(-100%); opacity:0; visibility:inherit}
+100% { visibility:hidden; height:500px}
+}
+
+@-webkit-keyframes start_bn_m /* Safari and Chrome */
+{
+0%   {-webkit-transform:translateY(0%);}
+50%  {-webkit-transform:translateY(10%); opacity:1;height:300px}
+99.9% {-webkit-transform:translateY(-100%); opacity:0; visibility:inherit}
+100% { visibility:hidden; height:500px}
+}
+
+@-o-keyframes start_bn_m /* Opera */
+{
+0%   {transform:translateY(0%);}
+50%  {transform:translateY(10%); opacity:1;height:300px}
+99.9% {transform:translateY(-100%); opacity:0; visibility:inherit}
+100% { visibility:hidden; height:500px}
+}

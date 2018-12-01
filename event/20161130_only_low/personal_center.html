@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta name="description" content="电子商务平台">
+<title>易微优品 捡漏王 唯一低价竞猜</title>
+<link href="../16X16_yiwei_logo.ico" rel="SHORTCUT ICON">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+//彈出訊息
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+</script>
+</head>
+<body>
+<!--top_menu-開始-->
+<div class="top_menu">
+  <div class="top_menu_content"> <a href="javascript:history.go(-1);" class="return_icon"></a>
+    <div class="top_title">竞猜中心</div>
+    <a href="#" class="back_yiwei_bn">返回<br>
+    易微</a>
+    <div class="clear"><!--清除靠左版面用,請勿拿掉--></div>
+  </div>
+</div>
+<!--top_menu-end--> 
+
+<!--內容_開始-->
+<div class="main_content">
+  <div class="area_bg">
+    <div class="row-fluid personal_title"><img class="img-circle" src="images/p_icon_100X100.gif">
+      <div class="name">
+        <ul class="inline">
+          <li>我是一般人我</li>
+          <!--名子若太長會自動推擠到下一行-->
+          <li class="grade"><img src="images/v1_icon_40X40.png" width="24px"><span>一般会员</span> </li>
+        </ul>
+        <div class="text-left member_id">
+          <ul class="inline">
+            <li>会员ID:123457890</li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <hr>
+    <ul>
+      <li><strong>当前拥有竞猜次数：</strong><span class="text-error">1000000</span>&nbsp;次</li>
+      <li><strong>领取每日免费竞猜次数</strong>&nbsp;<span class="down_menu_attention">
+        <input class="btn btn-success" type="submit" value="领取" onClick="MM_popupMsg('今日【免费竞猜次数】已成功领取，请于当天使用隔日无效')">
+        </span><span class="down_menu_attention_active">
+        <button type="button" class="btn btn-danger" disabled>已领取</button>
+        </span> 
+        <script>
+	  //簡易開關"領取""已領取"
+$(document).ready(function(){
+	$(".down_menu_attention_active").hide();
+    $(".down_menu_attention").click(function(){
+        $(".down_menu_attention").hide();
+		$(".down_menu_attention_active").show();
+    });
+    $(".down_menu_attention_active").click(function(){
+        $(".down_menu_attention_active").hide();
+		$(".down_menu_attention").show();
+    });
+});
+</script> 
+      </li>
+      <li><strong>购买出价数：</strong>
+        <div class="input-prepend input-append" style="margin-top:10px">
+          <button class="btn" type="button">-</button>
+          <input type="text" class="span1 text-center" id="appendedInputButtons" value="1">
+          <button class="btn" type="button">+</button>
+          </div>&nbsp;次&nbsp;<a href="#to_buy" class="btn btn-info" type="button" data-toggle="collapse">购买</a>
+        <div class="text-error">※购买1次竞猜次数需花费¥3(或3易币)※</div>
+      </li>
+    </ul>
+    
+    <div id="to_buy" class="collapse">
+    <hr>
+    <h5>购买&nbsp;<span class="text-error">50</span>&nbsp;次，需花费&nbsp;<span class="text-error">¥150(或150易币)</span></h5><!--顯示上方購買次數加總金額-->
+    <h5>支付方式：</h5>
+    <hr>
+    <a href="20161119_ordersproduct_yw.html" class="btn btn-large btn-info btn-block">易币余额支付</a><!--點擊直接前往支付-->
+    <a href="20161119_ordersproduct.html" class="btn btn-large btn-success btn-block">微信支付</a><!--點擊直接前往支付-->
+    <a href="20161119_ordersproduct.html" class="btn btn-large btn-danger btn-block">支付宝支付</a><!--點擊直接前往支付-->
+    <a href="20161119_ordersproduct.html" class="btn btn-large btn-info btn-block">网银支付</a><!--點擊直接前往支付-->
+    <a href="20161119_ordersproduct.html" class="btn btn-large btn-primary btn-block">盛付通支付</a><!--點擊直接前往支付-->
+    <a href="20161119_ordersproduct.html" class="btn btn-large btn-warning btn-block">现金帐户余额支付</a><!--點擊直接前往支付-->
+    </div>
+    
+  </div>
+  <!--<div class="area_bg">
+    <div class="row-fluid"> <a href="cash_account.html" class="span4 money_change"><img class="img-circle" src="images/cny_icon_100X100.gif" width="50px">
+      <div>现金账户</div>
+      <div class="price">￥10000000.00</div>
+      </a><a href="y_money_account.html" class="span4 money_change"><img class="img-circle" src="images/ym_icon_100X100.gif" width="50px">
+      <div>易币账户</div>
+      <div class="price"><img src="images/yiwei_money_icon_40X40.png">10000000</div>
+      </a><a href="pro_account.html" class="span4 money_change"><img class="img-circle" src="images/pro_icon_100X100.gif" width="50px">
+      <div>盈利账户</div>
+      <div class="price">￥10000000.00</div>
+      </a> </div>
+  </div>-->
+  <div class="area_bg">
+    <div class="p_menu"> <!--<a href="current_events.html"><img src="images/p_menu01_icon_40X40.png" width="20">当前参加竞猜</a>
+      <hr>
+      <a href="end_events.html"><img src="images/p_menu02_icon_40X40.png" width="20">历史参加竞猜</a>
+      <hr>--> 
+      <a href="join_events.html"><img src="images/p_menu03_icon_40X40.png" width="20">我的竞猜出价表</a>
+      <hr>
+      <a href="awards.html"><img src="images/p_menu04_icon_40X40.png" width="20">我的得奖记录</a> </div>
+  </div>
+  <div style="height:89px"><!--純粹墊高用不被下方選單遮住,不要拿掉--></div>
+</div>
+<!--down_menu-開始-->
+<div class="down_menu">
+  <div class="down_menu_content">
+    <div class="down_menu_bn"><a href="only_cheap_index.html"><img src="images/down_menu_bn01_icon_40X40.png" width="20px"><br>
+      捡漏首页</a></div>
+    <div class="down_menu_bn"><a href="product_listing.html"><img src="images/down_menu_bn07_icon_40X40.png" width="20px"><br>
+      竞猜列表</a></div>
+    <div class="down_menu_bn"> <a href="explain.html"><img src="images/down_menu_bn08_icon_40X40.png" width="20px"><br>
+      竞猜说明</a></div>
+    <div class="down_menu_bn_active"><a href="personal_center.html"><img src="images/down_menu_bn04_active.png" width="20px"><br>
+      竞猜中心</a></div>
+    <div class="clear"></div>
+  </div>
+</div>
+<!--down_menu-end-->
+<!--<div id="message" class="lightbox-record">
+  <div class="record" id="msg">
+    <div class="text-center">您购买的出价数为&nbsp;<span class="text-error">5</span>&nbsp;次，需花费&nbsp;<span class="text-error">15</span>&nbsp;易币
+      <hr>
+      <a href="#" class="btn" onClick="history.go(-1)">我再想想</a>&nbsp;&nbsp;
+      <input name="" class="btn btn-info" type="submit" onClick="MM_popupMsg('购买成功!');history.go(-1);return document.MM_returnValue;" value="确认购买">
+    </div>
+  </div>
+</div>-->
+</body>
+</html>

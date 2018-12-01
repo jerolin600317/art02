@@ -1,0 +1,252 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+	-webkit-overflow-scrolling: touch;/*該死的蘋果多點觸控*/
+	background-color: #ffa421;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	font-family: "微软雅黑", Arial, sans-serif, "Helvetica Neue";
+	font-size: 13px;
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	overflow-x: hidden;
+}
+.clear {
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	height: 0px;
+	width: 0px;
+}
+.content{
+	max-width: 680px;
+	margin-left: auto;
+	margin-right: auto;
+	/*background-color: #76baff;*/
+	background-image: url(../images/index_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	-moz-background-size: 100%;
+	background-size: 100%;
+	/* [disabled]padding-top: 38%; */
+	padding-right: 2%;
+	/* [disabled]padding-bottom: 2%; */
+	padding-left: 2%;
+	min-height: 100%;
+}
+/*幸運抽*/
+.lottery_content{
+	max-width: 500px;
+	margin-left: auto;
+	/* [disabled]float: left; */
+	margin-right: auto;
+	padding:2%;
+}
+.lottery_object{
+	width: 22.2%;
+	margin: 0%;
+	float: left;
+	border: 4px solid #FFF;
+	border-radius: 10px;
+}
+.object_name{
+	opacity:0.80;
+	background-color: rgba(0,0,0,0.80);/* IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂 */
+	margin-top: -25px;
+	/*margin-right:-2px;
+	margin-left:2px;*/
+	font-size: 11px;
+	color:#FFF;
+	text-align: center;
+	padding-top: 3px;
+	padding-right: 2px;
+	padding-bottom: 4px;
+	padding-left: 2px;
+	white-space: nowrap;
+	overflow: hidden;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+}
+@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+.object_name {
+	background-color: #000;
+	filter: Alpha(opacity=80);
+	position: static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+    *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+}}
+.lottery_object img{
+	width: 100%;
+}
+#lottery .active{
+	opacity: 0.50;
+	border: 4px solid #F30;
+}
+@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+#lottery .active{
+	filter: Alpha(opacity=50);
+	position: static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+    *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+}
+}
+.pointer {
+	width: 56%;
+	/* [disabled]height: 280px; */
+	max-width:280px;
+	position: relative;
+	margin-left: 21%;
+	margin-top: -77%;
+	z-index: 8;
+	cursor: pointer;
+	float: left;
+}
+.lottery_list{
+	max-width: 500px;
+	height: 60px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.lottery_list li{
+	margin-top:10px;
+}
+.abgne-news-scroll {
+	/* [disabled]width: 185px; */
+	height: 60px;
+	overflow: hidden;
+	/* [disabled]position: relative; */
+}
+/*彈框紅包*/
+.modal{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	z-index: 1050;
+	width: 100%;
+	height:100%;
+	margin-left:0px;
+	background-color: rgba(0,0,0,0);
+	border: 0px solid #999;
+	border: 0px solid rgba(0,0,0,0);
+    *border:0px solid #999;	
+    -webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	outline: 0;
+	-webkit-box-shadow: 0 0px 0px rgba(0,0,0,0);
+	-moz-box-shadow: 0 0px 0px rgba(0,0,0,0);
+	box-shadow:0 0px 0px rgba(0,0,0,0); 
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box
+}
+.modal-body{
+	text-align:center;
+	max-height:100%;
+	height:100%;
+}
+.modal.fade.in{
+	top:0%;
+}
+/*紅包*/
+#f_bg{
+	max-width:500px;
+	max-height:500px;
+	margin:0px auto;
+	position:relative;
+}
+.red_cp{
+	width:60%;
+	margin:-82% auto 0% auto;
+	position:relative;
+}
+.red_op{
+	width:60%;
+	margin:-99% auto 0% auto;
+	position:relative;
+	opacity:0;
+}
+.gift{
+	width: 50%;
+	position: relative;
+	opacity: 0;
+	background-color: #FFA421;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 6px;
+	margin: -60% auto 0% auto;
+	color: #FFF;
+	letter-spacing: 0.2em;
+	line-height: 1.5em;	/*word-spacing: 0.2em;*/
+}
+.gift small{
+	color:#F30;
+}
+.gift .gift_content{
+	width:100%;
+-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	/*padding-bottom:6px;*/
+	color: #F30;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 0.03em;
+	margin: 0% auto;
+	background-color: #FEF198;
+}
+.gift_name{
+	color: #fff;
+	opacity: 0;
+	height: 0px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 0.2em;
+	margin: 0% auto;
+}
+/*end*/
+
+.prize_bn{
+	width:50%;
+	margin:5% auto 0% auto;
+	position:relative;
+	/*display:none;*/
+	opacity:0;
+}
+.start_bn{
+	max-width:300px;
+	min-height:300px;
+	margin:10% auto;
+}
+
+.red_p{
+	width: 100%;
+	min-height: 100%;
+	/*max-width: 720px;
+	position: relative;*/
+	overflow: hidden;
+	margin: 0px auto;
+}
+/*.bg_1{background:url(../images/bg_redrain.png) no-repeat;background-size:cover;}
+.bg_2{background:url(../images/bg_redrain2.png) no-repeat;background-size:cover;}*/
+.red_p>div{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url(../images/icon.gif);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border: 0.2em solid #FFF;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	background-position: top;	/*background-position: 0px -1px;*/
+	background-color: #FFF;
+	display:block;
+}

@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+<meta name="description" content="电子商务平台">
+<title>易微优品</title>
+<link href="../../16X16_yiwei_logo.ico" rel="SHORTCUT ICON">
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="../../js/jquery-2.2.2.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script type="text/javascript">
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+</script>
+</head>
+
+<body>
+<div class="content"><img src="images/index_title_01.png"><!--依照不同關卡切換不同圖片，images目錄裡有五關的圖-->
+<div class="row well lottery_content">
+您拥有&nbsp;<span class="text-error">1</span>&nbsp;次抽奖机会<a href="#buy_frequency" class="btn pull-right" data-toggle="modal">购买抽奖次数</a>
+</div>
+  <div class="row well lottery_content">
+    <div id="all"> 
+      <!--獎項圖片跟名稱需有後台可以上傳,底下顯示下一關有哪些獎項,隨機位置,點擊彈出獎項內容介紹-->
+      <div class="initial" id="div1"><a href="#detailed" data-toggle="modal"><img src="images/prize_158X158.jpg" class="img-rounded">
+        <div class=object_name>酥爽按摩棒</div>
+        </a> </div>
+      <div class="initial" id="div2"><a href="#detailed" data-toggle="modal"><img src="images/prize_158X158_01.jpg" class="img-rounded">
+        <div class=object_name>第2奖</div>
+        </a> </div>
+      <div class="initial" id="div3"><a href="#detailed" data-toggle="modal"><img src="images/prize_158X158.jpg" class="img-rounded">
+        <div class=object_name>第3奖</div>
+        </a> </div>
+      <div class="initial" id="div4"><a href="#detailed" data-toggle="modal"><img src="images/prize_158X158.jpg" class="img-rounded">
+        <div class=object_name>第4奖</div>
+        </a> </div>
+      <div class="initial" id="div5"><a href="#detailed" data-toggle="modal"><img src="images/prize_158X158_01.jpg" class="img-rounded">
+        <div class=object_name>第5奖</div>
+        </a> </div>
+      <div class="initial" id="div6"><a href="#detailed" data-toggle="modal"><img src="images/prize_158X158.jpg" class="img-rounded">
+        <div class=object_name>第6奖</div>
+        </a> </div>
+      <div class="initial" id="div7"><a href="#detailed" data-toggle="modal"><img src="images/prize_158X158_01.jpg" class="img-rounded">
+        <div class=object_name>第7奖</div>
+        </a> </div>
+      <div class="initial" id="div8"><a href="#detailed" data-toggle="modal"><img src="images/prize_158X158.jpg" class="img-rounded">
+        <div class=object_name>第8奖</div>
+        </a> </div>
+      <div class="initial" id="div9"><a href="#detailed" data-toggle="modal"><img src="images/prize_158X158_01.jpg" class="img-rounded">
+        <div class=object_name>第9奖</div>
+        </a> </div>
+      <div class="clear"></div>
+    </div>
+    <p></p>
+    <div class="btn btn-large btn-danger btn-block" id="start_game">开始游戏</div>
+  </div>
+  <div class="well lottery_content lottery_list">
+  <div class="row-fluid">
+    <h5 class="span4 text-error"><i class="icon-gift"></i>&nbsp;获奖名单：</h5>
+    <div class="abgne-news-scroll span8">
+      <ul>
+        <!--輪播獲獎名單,可以有機器人名單作假-->
+        <li>jer****in<br>
+          <span class="text-error">抽中第奖第奖第奖第奖第</span></li>
+        <li>gggr****ggg<br>
+          <span class="text-error">抽中第5奖</span></li>
+        <li>8888****in<br>
+          <span class="text-error">抽中第6奖</span></li>
+        <li>3333****in<br>
+          <span class="text-error">抽中第12奖</span></li>
+        <li>4444****in<br>
+          <span class="text-error">抽中第2奖</span></li>
+        <li>666****in<br>
+          <span class="text-error">抽中第3奖</span></li>
+        <li>777****in<br>
+          <span class="text-error">抽中第1奖</span></li>
+        <li>999****in<br>
+          <span class="text-error">抽中第5奖</span></li>
+        <li>jer****in<br>
+          <span class="text-error">抽中第7奖</span></li>
+        <li>gggr****ggg<br>
+          <span class="text-error">抽中第8奖</span></li>
+        <li>8888****in<br>
+          <span class="text-error">抽中第9奖</span></li>
+        <li>3333****in<br>
+          <span class="text-error">抽中第10奖</span></li>
+        <li>4444****in<br>
+          <span class="text-error">抽中第11奖</span></li>
+        <li>666****in<br>
+          <span class="text-error">抽中第2奖</span></li>
+        <li>777****in<br>
+          <span class="text-error">抽中第4奖</span></li>
+        <li>999****in<br>
+          <span class="text-error">抽中第6奖</span></li>
+        <li>jer****in<br>
+          <span class="text-error">抽中第7奖</span></li>
+        <li>gggr****ggg<br>
+          <span class="text-error">抽中第9奖</span></li>
+        <li>8888****in<br>
+          <span class="text-error">抽中第1奖</span></li>
+        <li>3333****in<br>
+          <span class="text-error">抽中第1奖</span></li>
+        <li>4444****in<br>
+          <span class="text-error">抽中第4奖</span></li>
+        <li>666****in<br>
+          <span class="text-error">抽中第8奖</span></li>
+        <li>777****in<br>
+          <span class="text-error">抽中第3奖</span></li>
+        <li>999****in<br>
+          <span class="text-error">抽中第5奖</span></li>
+        <li>jer****in<br>
+          <span class="text-error">抽中第7奖</span></li>
+        <li>gggr****ggg<br>
+          <span class="text-error">抽中第8奖</span></li>
+        <li>8888****in<br>
+          <span class="text-error">抽中第9奖</span></li>
+        <li>3333****in<br>
+          <span class="text-error">抽中第10奖</span></li>
+        <li>4444****in<br>
+          <span class="text-error">抽中第11奖</span></li>
+        <li>666****in<br>
+          <span class="text-error">抽中第12奖</span></li>
+        <li>777****in<br>
+          <span class="text-error">抽中第1奖</span></li>
+        <li>999****in<br>
+          <span class="text-error">抽中第4奖</span></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+  <div class="well lottery_content container-fluid">
+  <h5 class="text-error"><i class="icon-info-sign"></i>&nbsp;注意事项：</h5>
+  <hr>
+  <ul class="text-error">
+  <li>抽奖次数以当日为限，须于当日23:59以前使用完毕，逾期无效亦不补发。</li>
+  <li>抽中之奖项将会放入购物车里，需自行结帐才会出货。</li>
+  <li>奖项无须费用，但需自行负担运费。</li>
+  </ul>
+</div>
+  
+</div>
+
+<!--獎項介紹彈出視窗-->
+<div id="detailed" class="modal hide fade row-fluid" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h5><i class="icon-gift"></i>&nbsp;奖项详情：</h5>
+  </div>
+  <div class="modal-body">
+    <div class="span5"><img src="images/prize_158X158_01.jpg" class="img-rounded"></div>
+    <div class="span7">
+      <h5>肌肤内在生机补水</h5>
+      <ul>
+        <li>价值：¥12000</li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+    <hr>
+    <div class="span12"><!--獎項說明-->唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静唤醒肌肤内在生机补水锁水紧致肌肤细胞活跃控制油分雀斑靓白舒缓镇静</div>
+  </div>
+</div>
+</div>
+
+<!--购买抽奖次数彈出視窗-->
+<div id="buy_frequency" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h5>购买抽奖次数</h5>
+  </div>
+  <div class="modal-body">
+  <div class="control-group">
+        <label class="control-label">购买次数：</label>
+        <div class="controls"><div class="input-prepend input-append"><button class="btn" type="button">-</button><input type="text" class="span1 text-center" id="appendedInputButtons" value="1"><button class="btn" type="button">+</button></div></div>
+        </div>
+  <ul class="text-error"><li>购买抽奖次数１次将花费¥50(或100易币)</li>
+    <li>确定购买次数后，将从现金帐户(或易币帐户)直接扣除，如果帐户余额不足将于奖项结帐同时支付</li>
+    <li>抽奖次数以当日为限，须于当日23:59以前使用完毕，逾期无效亦不补发。</li>
+    </ul>
+  </div>
+  <div class="modal-footer"> <a href="#" class="btn btn-warning btn-large">现金购买</a> <a href="#" class="btn btn-info btn-large" onClick="MM_popupMsg('購買成功');$('#buy_frequency').modal('hide')">易币购买</a> </div>
+</div>
+    
+</body>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.flip.min.js"></script>
+<script>//翻牌程式
+$(function(){
+		$('#start_game').click(function(){//點擊開始遊戲
+			var _this = $('.initial');
+		_this.flip({
+			direction: 'lr',
+			content:'<div class=card><img src="images/card_bg.gif" class="img-rounded"></div>',//翻頁卡片封面
+			color:'#fff',
+			speed: 150,
+			
+		onEnd: function(){
+		//翻牌後的動畫,單純只是動畫,跟得獎無關
+		var divW=$('#div1').width();
+        var divH=$('#div1').height();//抓取物件尺寸
+		var div01=$("#div1");
+		var div02=$("#div2");
+		var div03=$("#div3");
+		var div04=$("#div4");
+		var div05=$("#div5");
+		var div06=$("#div6");
+		var div07=$("#div7");
+		var div08=$("#div8");
+		var div09=$("#div9");
+		div01.animate({left:'33%',top:divW+10+'px'},"fast");
+		div01.animate({left:'0%',top:'0px'},"fast");
+		//div01.animate({top:divW+10+'px'},"fast");
+//		div01.animate({top:'0px'},"fast");
+		
+		//div02.animate({left:'-33%'},"fast");
+//		div02.animate({left:'0%'},"fast");
+//		div02.animate({left:'33%'},"fast");
+//		div02.animate({left:'0%'},"fast");
+		div02.animate({top:divW+10+'px'},"fast");
+		div02.animate({top:'0px'},"fast");
+		
+		//div03.animate({top:divW+10+'px'},"fast");
+//		div03.animate({top:'0px'},"fast");
+		div03.animate({left:'-33%',top:divW+10+'px'},"fast");
+		div03.animate({left:'0%',top:'0px'},"fast");
+		
+		//div04.animate({top:divW+10+'px'},"fast");
+//		div04.animate({top:'0px'},"fast");
+//		div04.animate({top:0-(divW+10)+'px'},"fast");
+//		div04.animate({top:'0px'},"fast");
+		div04.animate({left:'33%'},"fast");
+		div04.animate({left:'0%'},"fast");
+		
+		//div05.animate({top:divW+10+'px'},"fast");
+//		div05.animate({top:'0px'},"fast");
+		div05.animate({left:'0%'},"fast");
+		div05.animate({left:'0%'},"fast");
+		
+		//div06.animate({top:0-(divW+10)+'px'},"fast");
+//		div06.animate({top:'0px'},"fast");
+		div06.animate({left:'-33%'},"fast");
+		div06.animate({left:'0%'},"fast");
+		
+		div07.animate({left:'33%',top:0-(divW+10)+'px'},"fast");
+		div07.animate({left:'0%',top:'0px'},"fast");
+		//div07.animate({left:'33%'},"fast");
+//		div07.animate({left:'0%'},"fast");
+		
+		div08.animate({top:0-(divW+10)+'px'},"fast");
+		div08.animate({top:'0px'},"fast");
+		//div08.animate({left:'-33%'},"fast");
+//		div08.animate({left:'0%'},"fast");
+		
+		div09.animate({left:'-33%',top:0-(divW+10)+'px'},"fast");
+		div09.animate({left:'0%',top:'0px'},"fast");
+		//div09.animate({left:'-33%'},"fast");
+//		div09.animate({left:'0%'},"fast");
+		
+		$('#start_game').hide();//開始遊戲按鈕隱藏
+		$('.card').click(function(){
+		var _this = $(this);
+		_this.flip({
+			direction: 'lr',
+			content:'<img src=images/prize_158X158.jpg class=img-rounded><div class=object_name>第11奖</div>',//真正得獎內容,得獎內容圖片和獎項名稱
+			speed: 150,
+			color:'#fff',
+			onEnd: function(){//點擊之後其他卡片click失效
+			$('.card').unbind('click');
+			setTimeout(function(){
+window.location.replace("result.html");//翻完牌延遲2秒導向網頁
+},2000)
+		}
+		});
+	});
+			
+			}
+		});
+		});
+	
+});
+//参数说明：
+//direction：翻转方向，总共有 4 个值（tb、bt、lr、rl），默认 tb
+//content：设置翻转后容器内显示的内容，可以是文本，可以是 html，甚至可以是 jquery 对象
+//color：设置翻转后容器的背景色
+//speed：设置翻转速度，值越小速度就越快
+//onBefore：设置翻转前需要执行的内容
+//onAnimation：设置翻转到一半的时候需要执行的内容
+//onEnd：设置翻转完成后需要执行的内容
+</script>
+<script>//獲獎名單跑馬燈程式
+function getRecord(){
+	$.post("../choujiang/listPrizeRecord.shtml",
+			{},
+			function(data,status){
+				if(data != ""){
+					if (data == 'false') {
+					}
+					else 
+					{
+						$("#listPrizeRecord").html(data);
+					}
+				}
+	});
+}
+getRecord();
+$(function(){
+	// 先取得 .abgne-news-scroll ul, 並設定淡入及輪播時間
+	var $news = $('.abgne-news-scroll ul');
+	var	fadeInSpeed = 1000;
+	var get = 0;
+	var	timer, speed = 3000;
+ 
+	// 用來控制輪播用
+	function newsScroll(){
+			
+		$news = $('.abgne-news-scroll ul');
+		// 先找出最後一個 li
+		var $last = $news.find('li:last');
+		// 複製一份並先隱藏起來
+		// 接著把它加到 .abgne-news-scroll ul 中的第一個項目
+		// 最後用淡入的方式顯示, 當顯示完後繼續輪播
+		$last.clone().hide().prependTo($news).fadeIn(fadeInSpeed, function(){
+			timer = setTimeout(newsScroll, speed);
+		});
+		// 把 $last 移除掉
+		$last.remove();
+	}
+ 
+	// 啟動輪播計時器
+	timer = setTimeout(newsScroll, speed);
+});
+
+</script>
+
+</html>

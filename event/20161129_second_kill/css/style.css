@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+	background-color: #ffcc00;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	/*height: 100%;*/
+	font-family: "微软雅黑", Arial, sans-serif, "Helvetica Neue";
+	font-size: 13px;
+	/*letter-spacing: 1px;
+	word-spacing: 0.05em;*/
+	/* [disabled]background-attachment: fixed; */
+	/*background-position: center top;
+	background-repeat: no-repeat;*/
+}
+.clear {
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	height: 0px;
+	width: 0px;
+}
+.content{
+	max-width: 680px;
+	margin-left: auto;
+	margin-right: auto;
+	/* [disabled]background-color: #76baff; */
+	background-image: url(../images/index_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	-moz-background-size: 100%;
+	background-size: 100%;
+	/* [disabled]padding-top: 38%; */
+	padding-right: 2%;
+	/* [disabled]padding-bottom: 2%; */
+	padding-left: 2%;
+	height: 100%;
+	width: auto;
+	/*background-attachment: fixed;*/
+}
+/*幸運抽*/
+.lottery_content{
+	max-width: 500px;
+	margin-left: auto;
+	/* [disabled]float: left; */
+	margin-right: auto;
+	padding:2%;
+}
+.time_period{
+	width: 12.97%;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	float: left;
+	color: #FFF;
+	text-align: center;
+	padding: 2.5%;
+	border: 0.3em solid #FFF;
+	background-image: url(../images/time_period_100X100_bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	/*-moz-background-size: 100%;
+	background-size: 100%;*/
+}
+.past{
+	background-color: #CCC;
+}
+.just_now{
+	background-color:#C00;
+}
+.future{
+	background-color: #FFCC00;
+}

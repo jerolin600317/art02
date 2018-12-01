@@ -1,0 +1,275 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	/*height: 100%;*/
+	font-family: "微软雅黑", Arial, sans-serif, "Helvetica Neue";
+	font-size: 13px;
+	color: #333;
+	/*letter-spacing: 1px;
+	word-spacing: 0.05em;*/
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	-webkit-overflow-scrolling: touch;
+}
+.clear {
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	height: 0px;
+	width: 0px;
+}
+.content{
+	max-width: 680px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #dd2480;
+	/* [disabled]background-image: url(../images/index_bg_01.jpg); */
+	/* [disabled]background-repeat: no-repeat; */
+	/* [disabled]background-position: center top; */
+	-moz-background-size: 100%;
+	/* [disabled]background-size: 100%; */
+	/* [disabled]padding-top: 20%; */
+	padding-right: 2%;
+	padding-bottom: 2%;
+	padding-left: 2%;
+	min-height: 100%;
+}
+/*幸運抽*/
+.lottery_content{
+	max-width: 500px;
+	margin-left: auto;
+	/* [disabled]float: left; */
+	margin-right: auto;
+	padding: 2%;
+	margin-bottom: 10px;
+}
+.lottery_object{
+	width: 22.2%;
+	margin: 0%;
+	float: left;
+	border: 4px solid #FFF;
+	border-radius: 10px;
+}
+.object_name{
+	opacity:0.80;
+	background-color: rgba(0,0,0,0.80);/* IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂 */
+	margin-top: -25px;
+	/*margin-right:-2px;
+	margin-left:2px;*/
+	font-size: 11px;
+	color:#FFF;
+	text-align: center;
+	padding-top: 3px;
+	padding-right: 2px;
+	padding-bottom: 4px;
+	padding-left: 2px;
+	white-space: nowrap;
+	overflow: hidden;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+}
+@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+.object_name {
+	background-color: #000;
+	filter: Alpha(opacity=80);
+	position: static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+    *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+}}
+.lottery_object img{
+	width: 100%;
+}
+#lottery .active{
+	opacity: 0.50;
+	border: 4px solid #F30;
+}
+@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+#lottery .active{
+	filter: Alpha(opacity=50);
+	position: static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+    *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+}
+}
+.pointer {
+	width: 56%;
+	/* [disabled]height: 280px; */
+	max-width:280px;
+	position: relative;
+	margin-left: 21%;
+	margin-top: -77%;
+	z-index: 8;
+	cursor: pointer;
+	float: left;
+}
+.lottery_list{
+	/* [disabled]max-width: 500px; */
+	height: 50px;
+	/* [disabled]margin-left: auto; */
+	/* [disabled]margin-right: auto; */
+	/* [disabled]padding-bottom: 15px; */
+}
+.lottery_list li{
+	list-style-type: none;
+	margin-left: -25px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.abgne-news-scroll {
+	/* [disabled]width: 185px; */
+	height: 50px;
+	overflow: hidden;
+	/* [disabled]position: relative; */
+}
+/*連環翻*/
+.initial{
+	width: 30.6%;
+	margin: 0%;
+	float: left;
+	margin: 4px;
+	border-radius: 10px;
+	position:relative;
+}
+.card{
+	/*width: 30.6%;
+	height:158px;*/
+	margin: 0%;
+	/*float: left;
+	background-image: url(../images/card_bg.gif);
+	background-size:100%;
+	background-repeat: no-repeat;*/
+	border-radius: 10px;
+	cursor:pointer;
+}
+.card:hover{
+	-webkit-filter:brightness(120%);/* Chrome, Safari, Opera */
+     -moz-filter: brightness(120%);
+     -o-filter: brightness(120%);
+     -ms-filter: brightness(120%);
+	filter: brightness(120%);
+	opacity:0.8\9\0;/*煩死人的爛ie*/
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80); /*IE6~IE9*/ 
+}
+@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+.card:hover{
+	filter: Alpha(opacity=80);
+	position: static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+    *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+}
+}
+.card img{
+	width:100%;
+}
+/*end*/
+/* Pure CSS3 Lightbox start */
+.lightbox-target {
+	position: fixed;
+	top: -100%;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.7);
+	opacity: 0;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+	overflow: hidden;
+	/*margin-top: 40px;*/
+	padding-top: 40px;
+	z-index: 99;
+}
+.lightbox-target .down_menu_content {
+	background-color: #fff;
+	padding-top: 3px;
+	width: 100%;
+	height: 41px;
+	margin: auto;
+	position: absolute;
+	display: block;
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+	box-sizing: border-box;
+	-moz-transition: ease-in-out 0.5s;
+	-o-transition: ease-in-out 0.5s;
+	-webkit-transition: ease-in-out 0.5s;
+	transition: ease-in-out 0.5s;/*border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #666666;*/
+}
+.lightbox-target:target {
+	opacity: 1;
+	top: 0;
+	bottom: 0;
+}
+.lightbox-target:target .lightbox-close {
+	margin-top: 81px;
+}
+.lightbox-close {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	top: 0;
+	bottom: 0;
+	display: block;
+	box-sizing: border-box;
+	color: #fff;
+	position: absolute;
+	-moz-transition: ease-in-out 0.5s;
+	-o-transition: ease-in-out 0.5s;
+	-webkit-transition: ease-in-out 0.5s;
+	transition: ease-in-out 0.5s;
+}
+.lightbox-record {
+	position: fixed;
+	/* [disabled]top: -100%; */
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+	overflow-y: auto;
+	z-index: 99;
+	display: block;
+}
+.lightbox-record .record {
+	background-color: #FFF;
+	border-radius: 10px;
+	width: 98%;
+	display: block;
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+	box-sizing: border-box;
+	-moz-transition: ease-in-out 0.5s;
+	-o-transition: ease-in-out 0.5s;
+	-webkit-transition: ease-in-out 0.5s;
+	transition: ease-in-out 0.5s;
+	margin: auto;
+	padding: 8px;
+	overflow: hidden;
+	/* [disabled]text-align: center; */
+}
+.lightbox-record .record img{
+	width:100%;
+}
+.lightbox-record:target {
+	opacity: 1;
+	top: 0;
+	bottom: 0
+}
+.lightbox-record:target .lightbox-close {
+}
+/*END*/
+.modal{
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	left:2%;
+	right:2%;
+}

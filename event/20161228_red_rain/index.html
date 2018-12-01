@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+<meta name="description" content="电子商务平台">
+<title>易微优品</title>
+<link href="../../16X16_yiwei_logo.ico" rel="SHORTCUT ICON">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/ani.css" rel="stylesheet" type="text/css"><!--css3動畫-->
+<script src="js/jquery-2.2.2.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+window.onload = moveFn;//抓取解析
+function moveFn(){
+	 if( typeof( window.innerWidth ) == 'number' ) {
+    myWidth = window.innerWidth;
+    myHeight = window.innerHeight;
+  } else{
+    myWidth = document.documentElement.clientWidth;/* for ie*/
+    myHeight = document.documentElement.clientHeight;/* for ie*/
+  }
+  var bn01=document.getElementById("f_bg");//設定彈框高度
+	var bn01_Y=(myHeight/2)-180+"px";
+	bn01.style.margin=bn01_Y+" auto 0px auto";
+}
+$(document).ready(function(){
+$(".start_bn").click(function(){
+	$(".start_bn").addClass("start_bn_m");
+	$(".red_p").css('position','absolute');
+	$("body").css('overflow','hidden');
+	$("html").css('overflow','hidden');
+	//紅包雨
+var c =0;
+	var Timerr = setInterval(aa,100);
+	var removepackage = setInterval(function(){
+				for(var jj=0;jj<$('.red_p>div').size()/1;jj++){
+				$('.red_p>div').eq($('.red_p>div').size()-jj).remove();
+				}
+			},2000)
+	function aa(){
+		var x=myWidth;
+		var y=myHeight/2;
+		for(var i=0;i<1;i=i+1){
+		var j=parseInt(Math.random()*x);
+		var j1=parseInt(Math.random()*x-30);
+		var n=parseInt(Math.random()*0+(-100));
+		$('.red_p').prepend('<div class="dd"></div>');
+		$('.red_p').children('div').eq(0).css({'left':j,'top':n});
+		$('.red_p').children('div').eq(0).animate({'left':j-j1,'top':$(window).height()},3000);
+		$('.red_p').children('div').eq(0).animate({opacity:0},100);
+		}
+		}
+	$(document).on('touchend click','.dd', function(){
+		$(this).css("background-position","0 bottom");//點擊動畫切換圖
+		c++;
+		if(c == 1){//判斷點擊達紅包次數彈出動畫,就是看要讓玩家點多久.....
+		    clearInterval(Timerr,20);
+			setTimeout(function(){
+			$("#detailed").modal('show');//開啟彈窗
+			$("#f_bg").addClass("f_bg_m");//開紅包動畫
+	        $(".red_cp").addClass("red_cp_m");
+	        $(".red_op").addClass("red_op_m");
+	        $(".gift").addClass("gift_m");
+	        $(".gift_name").addClass("gift_name_m");
+	        $(".prize_bn").addClass("prize_bn_m");
+			},1000);
+		}
+	}); 
+});	
+});
+</script>
+</head>
+
+<body><div class="page_rain"><!--紅包群-->
+    <div class="red_p">
+      <div class="dd" style="transform:left: 50%; top: -150px;"></div>
+    </div>
+  </div>
+  
+<div class="content">
+  <img src="images/title.png">
+  <div class="start_bn"><img src="images/bn.png"></div>
+  <div class="well lottery_content lottery_list">
+    <div class="row-fluid">
+      <h5 class="span4 text-error"><i class="icon-gift"></i>&nbsp;获奖名单：</h5>
+      <div class="abgne-news-scroll span8">
+        <ul>
+          <!--輪播獲獎名單,可以有機器人名單作假-->
+          <li>jer****in<br>
+            <span class="text-error">抽中第奖第奖第奖第奖第</span></li>
+          <li>gggr****ggg<br>
+            <span class="text-error">抽中第5奖</span></li>
+          <li>8888****in<br>
+            <span class="text-error">抽中第6奖</span></li>
+          <li>3333****in<br>
+            <span class="text-error">抽中第12奖</span></li>
+          <li>4444****in<br>
+            <span class="text-error">抽中第2奖</span></li>
+          <li>666****in<br>
+            <span class="text-error">抽中第3奖</span></li>
+          <li>777****in<br>
+            <span class="text-error">抽中第1奖</span></li>
+          <li>999****in<br>
+            <span class="text-error">抽中第5奖</span></li>
+          <li>jer****in<br>
+            <span class="text-error">抽中第7奖</span></li>
+          <li>gggr****ggg<br>
+            <span class="text-error">抽中第8奖</span></li>
+          <li>8888****in<br>
+            <span class="text-error">抽中第9奖</span></li>
+          <li>3333****in<br>
+            <span class="text-error">抽中第10奖</span></li>
+          <li>4444****in<br>
+            <span class="text-error">抽中第11奖</span></li>
+          <li>666****in<br>
+            <span class="text-error">抽中第2奖</span></li>
+          <li>777****in<br>
+            <span class="text-error">抽中第4奖</span></li>
+          <li>999****in<br>
+            <span class="text-error">抽中第6奖</span></li>
+          <li>jer****in<br>
+            <span class="text-error">抽中第7奖</span></li>
+          <li>gggr****ggg<br>
+            <span class="text-error">抽中第9奖</span></li>
+          <li>8888****in<br>
+            <span class="text-error">抽中第1奖</span></li>
+          <li>3333****in<br>
+            <span class="text-error">抽中第1奖</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="well lottery_content container-fluid">
+    <h5 class="text-error"><i class="icon-info-sign"></i>&nbsp;注意事项：</h5>
+    <hr>
+    <ul class="text-error">
+      <li>未注册账号，则用户无法参与活动。</li>
+      <li>同一时段，同一用户只能参与1次。</li>
+      <li>每个时段红包数量有限，先抢先得抢完即止。</li>
+      <li>红包将发放于您的个人中心账户中，可在您的个人中心里查询。</li>
+    </ul>
+  </div>
+  
+  <!--得獎彈框-->
+  <div id="detailed" class="modal hide fade row-fluid" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-body">
+      <div id="f_bg"><img src="images/f_bg.png" alt="">
+        <div class="red_cp"><img src="images/open-no.png" alt=""></div>
+        <div class="red_op"><img src="images/red_op.png" alt=""></div>
+        <div class="gift">
+        
+        <div class="gift_content"><!--真正判斷送獎內容--><h3>中奖啦！</h3><h4>现金奖</h4><h2>2.66<small>元</small></h2>
+        <!--<h4>易币奖</h4><h2>28<small>易币</small></h2>抽中易幣樣式--></div>
+          <div class="gift_name"><h5>您的运气太好了，<br>赶紧花掉红包吧！</h5><!--提示下一輪時間-->下一轮红包雨将在16:00开始！</div>
+          
+          <!--沒抽中內容樣式<div class="gift_content"><h3>手脚太慢啰</h3><h5>红包已被抢完，<br>下一时段再来玩吧！</h5></div>
+          <div class="gift_name">下一轮红包雨将在16:00开始！</div>-->
+          
+        </div>
+      </div>
+      <div> 
+        <a href="#" class="prize_bn btn btn-warning btn-block btn-large">前往个人中心查询</a>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+</body>
+<script>//獲獎名單跑馬燈程式
+$(function(){
+	// 先取得 .abgne-news-scroll ul, 並設定淡入及輪播時間
+	var $news = $('.abgne-news-scroll ul');
+	var	fadeInSpeed = 1000;
+	var get = 0;
+	var	timer, speed = 3000;
+ 
+	// 用來控制輪播用
+	function newsScroll(){
+			
+		$news = $('.abgne-news-scroll ul');
+		// 先找出最後一個 li
+		var $last = $news.find('li:last');
+		// 複製一份並先隱藏起來
+		// 接著把它加到 .abgne-news-scroll ul 中的第一個項目
+		// 最後用淡入的方式顯示, 當顯示完後繼續輪播
+		$last.clone().hide().prependTo($news).fadeIn(fadeInSpeed, function(){
+			timer = setTimeout(newsScroll, speed);
+		});
+		// 把 $last 移除掉
+		$last.remove();
+	}
+ 
+	// 啟動輪播計時器
+	timer = setTimeout(newsScroll, speed);
+});
+
+</script>
+</html>
